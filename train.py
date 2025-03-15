@@ -1,7 +1,7 @@
 import wandb
 import numpy as np
 import pandas as pd
-from keras.datasets import fashion_mnist
+from keras.datasets import fashion_mnist # type: ignore
 
 # load the fashion-mnist dataset
 (x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
@@ -431,9 +431,6 @@ if __name__ == '__main__':
     print("\nTraining Accuracy: {:.2f}%".format(train_accuracy * 100))
 
 
-   
-
-
 # Define the sweep configuration
 sweep_config = {
     "method": "random",  # Random search strategy for efficiency
@@ -543,7 +540,7 @@ def train(config=None):
 
 
 # Run the sweep
-wandb.agent(sweep_id, function=train, count=1)
+wandb.agent(sweep_id, function=train, count=30)
 
 
 # Initialize wandb run (modify project name as needed)
@@ -804,7 +801,7 @@ wandb.log({"loss_comparison": wandb.Image(plt)})
 # Finish W&B
 wandb.finish()
 
-from keras.datasets import mnist
+from keras.datasets import mnist # type: ignore
 
 # Load MNIST dataset
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
@@ -934,6 +931,3 @@ for config in configs:
 print("\n=== Final Results ===")
 for result in results:
     print(f"{result['name']}: {result['test_accuracy']:.2%}")
-
-
-
