@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 634, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankleboot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 634, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankleboot'

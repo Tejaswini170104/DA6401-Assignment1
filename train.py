@@ -613,8 +613,7 @@ class_labels = [
     "T-shirt/top", "Trouser", "Pullover", "Dress", "Coat",
     "Sandal", "Shirt", "Sneaker", "Bag", "Ankle boot"
 ]
-# Remove extra spaces and normalize formatting
-class_labels = [label.strip() for label in class_labels]
+
 # Create confusion matrix dictionary
 conf_matrix_dict = {
     "y_true": [],
@@ -633,8 +632,8 @@ for i in range(num_classes):
 wandb.log({
     "confusion_matrix": wandb.plot.confusion_matrix(
         probs=None,
-        y_true=[class_labels[i] for i in y_test],
-        preds=[class_labels[i] for i in test_predictions],
+        y_true=y_test,
+        preds=test_predictions,
         class_names=class_labels
     )
 })

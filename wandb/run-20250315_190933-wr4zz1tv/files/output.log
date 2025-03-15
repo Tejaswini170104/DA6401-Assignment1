@@ -1,0 +1,13 @@
+Training started with mini-batch training...
+
+Epoch 1/10, Loss: 0.7600
+Epoch 2/10, Loss: 0.4492
+Epoch 3/10, Loss: 0.3873
+Epoch 4/10, Loss: 0.3653
+Epoch 5/10, Loss: 0.3570
+Epoch 6/10, Loss: 0.3501
+Epoch 7/10, Loss: 0.3501
+Epoch 8/10, Loss: 0.3422
+Epoch 9/10, Loss: 0.3413
+Epoch 10/10, Loss: 0.3418
+Test Accuracy: 86.50%
