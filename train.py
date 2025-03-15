@@ -602,29 +602,44 @@ print(f"Test Accuracy: {test_accuracy:.2%}")
 
 
 # Compute Confusion Matrix using NumPy
+# Initialize the W&B run
+wandb.init(project="fashion-mnist-classification", name="confusion_matrix_sweep")
 num_classes = 10
 conf_matrix = np.zeros((num_classes, num_classes), dtype=int)
-
 
 for true, pred in zip(y_test, test_predictions):
     conf_matrix[true, pred] += 1
 
-
-# Convert to Pandas DataFrame for readability
+# Define class labels
 class_labels = [
     "T-shirt/top", "Trouser", "Pullover", "Dress", "Coat",
     "Sandal", "Shirt", "Sneaker", "Bag", "Ankle boot"
 ]
 
+# Create confusion matrix dictionary
+conf_matrix_dict = {
+    "y_true": [],
+    "y_pred": [],
+    "count": []
+}
 
-conf_matrix_df = pd.DataFrame(conf_matrix, index=class_labels, columns=class_labels)
+for i in range(num_classes):
+    for j in range(num_classes):
+        if conf_matrix[i][j] > 0:
+            conf_matrix_dict["y_true"].append(class_labels[i])
+            conf_matrix_dict["y_pred"].append(class_labels[j])
+            conf_matrix_dict["count"].append(conf_matrix[i][j])
 
-
-# Log confusion matrix to wandb
-wandb.log({"confusion_matrix": wandb.Table(dataframe=conf_matrix_df)})
-
+# Log using `wandb.plot.confusion_matrix`
+wandb.log({
+    "confusion_matrix": wandb.plot.confusion_matrix(
+        probs=None,
+        y_true=[class_labels[i] for i in y_test],
+        preds=[class_labels[i] for i in test_predictions],
+        class_names=class_labels
+    )
+})
 
 # Finish wandb run
 wandb.finish()
-
 
