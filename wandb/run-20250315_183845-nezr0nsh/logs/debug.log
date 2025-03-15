@@ -1,0 +1,7 @@
+2025-03-15 18:38:45,872 INFO    MainThread:5648 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /workspaces/DA6401-Assignment1/wandb/run-20250315_183845-nezr0nsh/logs/debug.log
+2025-03-15 18:38:45,872 INFO    MainThread:5648 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /workspaces/DA6401-Assignment1/wandb/run-20250315_183845-nezr0nsh/logs/debug-internal.log
+2025-03-15 18:38:45,872 INFO    MainThread:5648 [wandb_init.py:init():761] calling init triggers
+2025-03-15 18:38:45,873 INFO    MainThread:5648 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activation': 'tanh', 'batch_size': 32, 'epochs': 5, 'hidden_layer_size': 32, 'learning_rate': 0.001, 'num_hidden_layers': 4, 'optimizer': 'nesterov', 'weight_decay': 0, 'weight_init': 'random'}
+config: {'_wandb': {}}
+2025-03-15 18:38:45,873 INFO    MainThread:5648 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-15 18:38:45,963 INFO    MsgRouterThr:5648 [mailbox.py:close():129] Closing mailbox, abandoning 2 handles.

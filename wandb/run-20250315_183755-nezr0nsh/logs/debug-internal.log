@@ -1,0 +1,16 @@
+{"time":"2025-03-15T18:37:55.955026285Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250315_183755-nezr0nsh/logs/debug-core.log"}
+{"time":"2025-03-15T18:37:56.060164082Z","level":"INFO","msg":"created new stream","id":"nezr0nsh"}
+{"time":"2025-03-15T18:37:56.060220387Z","level":"INFO","msg":"stream: started","id":"nezr0nsh"}
+{"time":"2025-03-15T18:37:56.06033384Z","level":"INFO","msg":"writer: Do: started","stream_id":"nezr0nsh"}
+{"time":"2025-03-15T18:37:56.060544844Z","level":"INFO","msg":"handler: started","stream_id":"nezr0nsh"}
+{"time":"2025-03-15T18:37:56.060590058Z","level":"INFO","msg":"sender: started","stream_id":"nezr0nsh"}
+{"time":"2025-03-15T18:37:56.4205777Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-15T18:38:05.832391524Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-15T18:38:05.833217675Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-15T18:38:06.833487858Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.659098827,"progress":"120B/120B"},{"desc":"uploading config.yaml","runtime_seconds":0.355895229,"progress":"864B/864B"}],"total_operations":2}}
+{"time":"2025-03-15T18:38:07.646493409Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-15T18:38:07.972343377Z","level":"INFO","msg":"stream: closing","id":"nezr0nsh"}
+{"time":"2025-03-15T18:38:07.972373594Z","level":"INFO","msg":"handler: closed","stream_id":"nezr0nsh"}
+{"time":"2025-03-15T18:38:07.97238763Z","level":"INFO","msg":"writer: Close: closed","stream_id":"nezr0nsh"}
+{"time":"2025-03-15T18:38:07.972454094Z","level":"INFO","msg":"sender: closed","stream_id":"nezr0nsh"}
+{"time":"2025-03-15T18:38:07.972466187Z","level":"INFO","msg":"stream: closed","id":"nezr0nsh"}

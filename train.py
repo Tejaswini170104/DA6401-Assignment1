@@ -540,7 +540,7 @@ def train(config=None):
 
 
 # Run the sweep
-wandb.agent(sweep_id, function=train, count=30)
+wandb.agent(sweep_id, function=train, count=1)
 
 
 # Initialize wandb run (modify project name as needed)
@@ -597,6 +597,7 @@ test_predictions = np.argmax(Y_pred_test, axis=1)
 test_accuracy = compute_accuracy(y_test, test_predictions)
 print(f"Test Accuracy: {test_accuracy:.2%}")
 
+wandb.finish()
 
 # Compute Confusion Matrix using NumPy
 # Initialize the W&B run
@@ -612,7 +613,8 @@ class_labels = [
     "T-shirt/top", "Trouser", "Pullover", "Dress", "Coat",
     "Sandal", "Shirt", "Sneaker", "Bag", "Ankle boot"
 ]
-
+# Remove extra spaces and normalize formatting
+class_labels = [label.strip() for label in class_labels]
 # Create confusion matrix dictionary
 conf_matrix_dict = {
     "y_true": [],

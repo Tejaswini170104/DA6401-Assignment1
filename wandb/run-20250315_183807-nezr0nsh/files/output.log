@@ -1,0 +1,263 @@
+Training started with mini-batch training...
+
+Epoch 1/10, Loss: 0.7356
+Epoch 2/10, Loss: 0.4305
+Epoch 3/10, Loss: 0.3830
+Epoch 4/10, Loss: 0.3658
+Epoch 5/10, Loss: 0.3585
+Epoch 6/10, Loss: 0.3536
+Epoch 7/10, Loss: 0.3526
+Epoch 8/10, Loss: 0.3506
+Epoch 9/10, Loss: 0.3448
+Epoch 10/10, Loss: 0.3478
+Test Accuracy: 85.44%
+[34m[1mwandb[0m: [33mWARNING[0m Changes to your `wandb` environment variables will be ignored because your `wandb` session has already started. For more information on how to modify your settings with `wandb.init()` arguments, please refer to [34m[4mhttps://wandb.me/wandb-init[0m.
+[34m[1mwandb[0m: [33mWARNING[0m Ignoring project 'fashion-mnist-classification' when running a sweep.
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 632, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Ankle boot'

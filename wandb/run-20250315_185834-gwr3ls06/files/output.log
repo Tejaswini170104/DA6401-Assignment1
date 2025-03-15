@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 609, in <module>
+    y_test = [class_labels[i].strip() for i in y_test]
+              ^^^^^^^^^^^^
+NameError: name 'class_labels' is not defined. Did you mean: 'class_names'?
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 609, in <module>
+    y_test = [class_labels[i].strip() for i in y_test]
+              ^^^^^^^^^^^^
+NameError: name 'class_labels' is not defined. Did you mean: 'class_names'?
