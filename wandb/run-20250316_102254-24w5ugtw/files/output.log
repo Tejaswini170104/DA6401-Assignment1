@@ -1,0 +1,11 @@
+Epoch 1/10|cross_entropy Loss: 0.3127
+Epoch 2/10|cross_entropy Loss: 0.1198
+Epoch 3/10|cross_entropy Loss: 0.0807
+Epoch 4/10|cross_entropy Loss: 0.0625
+Epoch 5/10|cross_entropy Loss: 0.0466
+Epoch 6/10|cross_entropy Loss: 0.0390
+Epoch 7/10|cross_entropy Loss: 0.0305
+Epoch 8/10|cross_entropy Loss: 0.0275
+Epoch 9/10|cross_entropy Loss: 0.0238
+Epoch 10/10|cross_entropy Loss: 0.0211
+Test Accuracy for config_1: 97.80%

@@ -1,0 +1,50 @@
+Epoch 1/20|cross_entropy Loss: 2.3038
+Epoch 2/20|cross_entropy Loss: 2.3038
+Epoch 3/20|cross_entropy Loss: 2.3038
+Epoch 4/20|cross_entropy Loss: 2.3038
+Epoch 5/20|cross_entropy Loss: 2.3038
+Epoch 6/20|cross_entropy Loss: 2.3037
+Epoch 7/20|cross_entropy Loss: 2.3037
+Epoch 8/20|cross_entropy Loss: 2.3037
+Epoch 9/20|cross_entropy Loss: 2.3037
+Epoch 10/20|cross_entropy Loss: 2.3037
+Epoch 11/20|cross_entropy Loss: 2.3037
+Epoch 12/20|cross_entropy Loss: 2.3037
+Epoch 13/20|cross_entropy Loss: 2.3037
+Epoch 14/20|cross_entropy Loss: 2.3037
+Epoch 15/20|cross_entropy Loss: 2.3037
+Epoch 16/20|cross_entropy Loss: 2.3037
+Epoch 17/20|cross_entropy Loss: 2.3037
+Epoch 18/20|cross_entropy Loss: 2.3037
+Epoch 19/20|cross_entropy Loss: 2.3036
+Epoch 20/20|cross_entropy Loss: 2.3036
+Epoch 1/20|squared_error Loss: 2.3042
+Epoch 2/20|squared_error Loss: 2.3042
+Epoch 3/20|squared_error Loss: 2.3042
+Epoch 4/20|squared_error Loss: 2.3042
+Epoch 5/20|squared_error Loss: 2.3042
+Epoch 6/20|squared_error Loss: 2.3042
+Epoch 7/20|squared_error Loss: 2.3042
+Epoch 8/20|squared_error Loss: 2.3042
+Epoch 9/20|squared_error Loss: 2.3041
+Epoch 10/20|squared_error Loss: 2.3041
+Epoch 11/20|squared_error Loss: 2.3041
+Epoch 12/20|squared_error Loss: 2.3041
+Epoch 13/20|squared_error Loss: 2.3041
+Epoch 14/20|squared_error Loss: 2.3041
+Epoch 15/20|squared_error Loss: 2.3041
+Epoch 16/20|squared_error Loss: 2.3041
+Epoch 17/20|squared_error Loss: 2.3041
+Epoch 18/20|squared_error Loss: 2.3041
+Epoch 19/20|squared_error Loss: 2.3040
+Epoch 20/20|squared_error Loss: 2.3040
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 672, in <module>
+    plt.figure(figsize=(10, 6))
+    ^^^
+NameError: name 'plt' is not defined
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 672, in <module>
+    plt.figure(figsize=(10, 6))
+    ^^^
+NameError: name 'plt' is not defined

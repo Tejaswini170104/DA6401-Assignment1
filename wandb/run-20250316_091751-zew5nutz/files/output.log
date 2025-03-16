@@ -1,0 +1,46 @@
+Epoch 1/20 | cross_entropy Loss: 2.3037
+Epoch 2/20 | cross_entropy Loss: 2.3037
+Epoch 3/20 | cross_entropy Loss: 2.3036
+Epoch 4/20 | cross_entropy Loss: 2.3035
+Epoch 5/20 | cross_entropy Loss: 2.3035
+Epoch 6/20 | cross_entropy Loss: 2.3034
+Epoch 7/20 | cross_entropy Loss: 2.3033
+Epoch 8/20 | cross_entropy Loss: 2.3033
+Epoch 9/20 | cross_entropy Loss: 2.3033
+Epoch 10/20 | cross_entropy Loss: 2.3032
+Epoch 11/20 | cross_entropy Loss: 2.3032
+Epoch 12/20 | cross_entropy Loss: 2.3031
+Epoch 13/20 | cross_entropy Loss: 2.3031
+Epoch 14/20 | cross_entropy Loss: 2.3031
+Epoch 15/20 | cross_entropy Loss: 2.3030
+Epoch 16/20 | cross_entropy Loss: 2.3030
+Epoch 17/20 | cross_entropy Loss: 2.3030
+Epoch 18/20 | cross_entropy Loss: 2.3029
+Epoch 19/20 | cross_entropy Loss: 2.3029
+Epoch 20/20 | cross_entropy Loss: 2.3029
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 786, in <module>
+    squared_error_loss = nn_squared_error.train(x_train, y_train, epochs=20, loss_type="squared_error")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/DA6401-Assignment1/train.py", line 756, in train
+    grads = self.backward(X_batch, Y_batch, loss_type)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/DA6401-Assignment1/train.py", line 717, in backward
+    dZ = (Y_pred - Y_true) * activation_derivative(z, self.act_output)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/DA6401-Assignment1/train.py", line 86, in activation_derivative
+    raise ValueError("Derivative for activation type '{}' not implemented.".format(act_type))
+ValueError: Derivative for activation type 'softmax' not implemented.
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 786, in <module>
+    squared_error_loss = nn_squared_error.train(x_train, y_train, epochs=20, loss_type="squared_error")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/DA6401-Assignment1/train.py", line 756, in train
+    grads = self.backward(X_batch, Y_batch, loss_type)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/DA6401-Assignment1/train.py", line 717, in backward
+    dZ = (Y_pred - Y_true) * activation_derivative(z, self.act_output)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/DA6401-Assignment1/train.py", line 86, in activation_derivative
+    raise ValueError("Derivative for activation type '{}' not implemented.".format(act_type))
+ValueError: Derivative for activation type 'softmax' not implemented.

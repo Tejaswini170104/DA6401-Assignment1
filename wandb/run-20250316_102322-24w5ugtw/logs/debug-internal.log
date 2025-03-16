@@ -1,0 +1,16 @@
+{"time":"2025-03-16T10:23:22.26352809Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_102322-24w5ugtw/logs/debug-core.log"}
+{"time":"2025-03-16T10:23:22.367067542Z","level":"INFO","msg":"created new stream","id":"24w5ugtw"}
+{"time":"2025-03-16T10:23:22.367102498Z","level":"INFO","msg":"stream: started","id":"24w5ugtw"}
+{"time":"2025-03-16T10:23:22.367165284Z","level":"INFO","msg":"handler: started","stream_id":"24w5ugtw"}
+{"time":"2025-03-16T10:23:22.367217792Z","level":"INFO","msg":"writer: Do: started","stream_id":"24w5ugtw"}
+{"time":"2025-03-16T10:23:22.367254413Z","level":"INFO","msg":"sender: started","stream_id":"24w5ugtw"}
+{"time":"2025-03-16T10:23:22.683916489Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T10:24:18.836676763Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T10:24:18.837155024Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T10:24:19.837692971Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-24w5ugtw-confusion_matrix_table","runtime_seconds":1.005206353},{"desc":"uploading config.yaml","runtime_seconds":0.346060451,"progress":"2.2KB/2.2KB"}],"total_operations":2}}
+{"time":"2025-03-16T10:24:21.766479932Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T10:24:22.086540256Z","level":"INFO","msg":"stream: closing","id":"24w5ugtw"}
+{"time":"2025-03-16T10:24:22.086560554Z","level":"INFO","msg":"handler: closed","stream_id":"24w5ugtw"}
+{"time":"2025-03-16T10:24:22.086573538Z","level":"INFO","msg":"writer: Close: closed","stream_id":"24w5ugtw"}
+{"time":"2025-03-16T10:24:22.086641976Z","level":"INFO","msg":"sender: closed","stream_id":"24w5ugtw"}
+{"time":"2025-03-16T10:24:22.086655551Z","level":"INFO","msg":"stream: closed","id":"24w5ugtw"}

@@ -1,0 +1,16 @@
+{"time":"2025-03-16T09:45:48.048499773Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_094548-juk5zyp5/logs/debug-core.log"}
+{"time":"2025-03-16T09:45:48.151949308Z","level":"INFO","msg":"created new stream","id":"juk5zyp5"}
+{"time":"2025-03-16T09:45:48.151988331Z","level":"INFO","msg":"stream: started","id":"juk5zyp5"}
+{"time":"2025-03-16T09:45:48.152059854Z","level":"INFO","msg":"handler: started","stream_id":"juk5zyp5"}
+{"time":"2025-03-16T09:45:48.152085572Z","level":"INFO","msg":"writer: Do: started","stream_id":"juk5zyp5"}
+{"time":"2025-03-16T09:45:48.15210966Z","level":"INFO","msg":"sender: started","stream_id":"juk5zyp5"}
+{"time":"2025-03-16T09:45:48.481909664Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T09:45:48.969934303Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T09:45:48.970965474Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T09:45:49.946819154Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-juk5zyp5-confusion_matrix_table","runtime_seconds":0.684046177},{"desc":"uploading output.log","runtime_seconds":0.347299499},{"desc":"uploading wandb-summary.json","runtime_seconds":0.347288008,"progress":"754B/754B"},{"desc":"uploading media/table/confusion_matrix_table_0_5c7d9029621d7ea5e1ee.table.json","runtime_seconds":0.347282918,"progress":"2.9KB/2.9KB"},{"desc":"uploading config.yaml","runtime_seconds":0.03244512,"progress":"2.2KB/2.2KB"}],"total_operations":5}}
+{"time":"2025-03-16T09:45:52.020665342Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T09:45:52.356493986Z","level":"INFO","msg":"stream: closing","id":"juk5zyp5"}
+{"time":"2025-03-16T09:45:52.356595755Z","level":"INFO","msg":"handler: closed","stream_id":"juk5zyp5"}
+{"time":"2025-03-16T09:45:52.356623978Z","level":"INFO","msg":"writer: Close: closed","stream_id":"juk5zyp5"}
+{"time":"2025-03-16T09:45:52.356712333Z","level":"INFO","msg":"sender: closed","stream_id":"juk5zyp5"}
+{"time":"2025-03-16T09:45:52.356765392Z","level":"INFO","msg":"stream: closed","id":"juk5zyp5"}

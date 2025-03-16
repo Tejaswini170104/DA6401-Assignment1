@@ -1,0 +1,16 @@
+{"time":"2025-03-16T09:15:51.771353306Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_091551-cul0rb4i/logs/debug-core.log"}
+{"time":"2025-03-16T09:15:51.87730073Z","level":"INFO","msg":"created new stream","id":"cul0rb4i"}
+{"time":"2025-03-16T09:15:51.877338861Z","level":"INFO","msg":"stream: started","id":"cul0rb4i"}
+{"time":"2025-03-16T09:15:51.877508865Z","level":"INFO","msg":"writer: Do: started","stream_id":"cul0rb4i"}
+{"time":"2025-03-16T09:15:51.877654166Z","level":"INFO","msg":"handler: started","stream_id":"cul0rb4i"}
+{"time":"2025-03-16T09:15:51.878004058Z","level":"INFO","msg":"sender: started","stream_id":"cul0rb4i"}
+{"time":"2025-03-16T09:15:52.313185492Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T09:15:53.31374182Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T09:15:53.314346685Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T09:15:54.28098103Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/fashion-mnist samples_0_adf48a208b1e9f1a3b47.png","runtime_seconds":0.598674582,"progress":"574B/574B"},{"desc":"uploading config.yaml","runtime_seconds":0.240721012,"progress":"582B/582B"}],"total_operations":2}}
+{"time":"2025-03-16T09:15:54.418001146Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T09:15:54.781730147Z","level":"INFO","msg":"stream: closing","id":"cul0rb4i"}
+{"time":"2025-03-16T09:15:54.781786362Z","level":"INFO","msg":"handler: closed","stream_id":"cul0rb4i"}
+{"time":"2025-03-16T09:15:54.781803574Z","level":"INFO","msg":"writer: Close: closed","stream_id":"cul0rb4i"}
+{"time":"2025-03-16T09:15:54.781917747Z","level":"INFO","msg":"sender: closed","stream_id":"cul0rb4i"}
+{"time":"2025-03-16T09:15:54.781933847Z","level":"INFO","msg":"stream: closed","id":"cul0rb4i"}

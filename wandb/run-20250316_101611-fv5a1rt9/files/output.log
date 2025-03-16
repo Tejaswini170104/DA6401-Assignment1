@@ -1,0 +1,27 @@
+Epoch 1/10|cross_entropy Loss: 0.3184
+Epoch 2/10|cross_entropy Loss: 0.1218
+Epoch 3/10|cross_entropy Loss: 0.0836
+Epoch 4/10|cross_entropy Loss: 0.0625
+Epoch 5/10|cross_entropy Loss: 0.0480
+Epoch 6/10|cross_entropy Loss: 0.0397
+Epoch 7/10|cross_entropy Loss: 0.0319
+Epoch 8/10|cross_entropy Loss: 0.0265
+Epoch 9/10|cross_entropy Loss: 0.0219
+Epoch 10/10|cross_entropy Loss: 0.0194
+Test Accuracy for config_1: 97.71%
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 808, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: '7'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 808, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/wandb/plot/confusion_matrix.py", line 160, in confusion_matrix
+    counts[class_mapping[y_true[i]], class_mapping[preds[i]]] += 1
+           ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: '7'

@@ -1,0 +1,16 @@
+{"time":"2025-03-16T10:21:45.564513213Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_102145-24w5ugtw/logs/debug-core.log"}
+{"time":"2025-03-16T10:21:45.668489645Z","level":"INFO","msg":"created new stream","id":"24w5ugtw"}
+{"time":"2025-03-16T10:21:45.668628153Z","level":"INFO","msg":"handler: started","stream_id":"24w5ugtw"}
+{"time":"2025-03-16T10:21:45.668660513Z","level":"INFO","msg":"stream: started","id":"24w5ugtw"}
+{"time":"2025-03-16T10:21:45.668803149Z","level":"INFO","msg":"sender: started","stream_id":"24w5ugtw"}
+{"time":"2025-03-16T10:21:45.668822835Z","level":"INFO","msg":"writer: Do: started","stream_id":"24w5ugtw"}
+{"time":"2025-03-16T10:21:46.011939401Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T10:21:46.522084314Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T10:21:46.522574054Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T10:21:47.496013972Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading requirements.txt","runtime_seconds":1.000153729,"progress":"2.8KB/2.8KB"},{"desc":"uploading artifact run-24w5ugtw-confusion_matrix_table","runtime_seconds":0.64451965},{"desc":"uploading wandb-summary.json","runtime_seconds":0.30175493,"progress":"754B/754B"},{"desc":"uploading media/table/confusion_matrix_table_0_aa6910fb36e707237af9.table.json","runtime_seconds":0.301745873,"progress":"2.9KB/2.9KB"},{"desc":"uploading output.log","runtime_seconds":0.301742688}],"total_operations":5}}
+{"time":"2025-03-16T10:21:49.715575031Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T10:21:50.07822302Z","level":"INFO","msg":"stream: closing","id":"24w5ugtw"}
+{"time":"2025-03-16T10:21:50.078251423Z","level":"INFO","msg":"handler: closed","stream_id":"24w5ugtw"}
+{"time":"2025-03-16T10:21:50.078262584Z","level":"INFO","msg":"writer: Close: closed","stream_id":"24w5ugtw"}
+{"time":"2025-03-16T10:21:50.078308277Z","level":"INFO","msg":"sender: closed","stream_id":"24w5ugtw"}
+{"time":"2025-03-16T10:21:50.078319831Z","level":"INFO","msg":"stream: closed","id":"24w5ugtw"}

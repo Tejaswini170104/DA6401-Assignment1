@@ -1,0 +1,16 @@
+{"time":"2025-03-16T09:17:47.565512031Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_091747-zew5nutz/logs/debug-core.log"}
+{"time":"2025-03-16T09:17:47.668702355Z","level":"INFO","msg":"created new stream","id":"zew5nutz"}
+{"time":"2025-03-16T09:17:47.668738603Z","level":"INFO","msg":"stream: started","id":"zew5nutz"}
+{"time":"2025-03-16T09:17:47.66874947Z","level":"INFO","msg":"writer: Do: started","stream_id":"zew5nutz"}
+{"time":"2025-03-16T09:17:47.668810707Z","level":"INFO","msg":"sender: started","stream_id":"zew5nutz"}
+{"time":"2025-03-16T09:17:47.668831866Z","level":"INFO","msg":"handler: started","stream_id":"zew5nutz"}
+{"time":"2025-03-16T09:17:48.008148672Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T09:17:48.523729201Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T09:17:48.524320552Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T09:17:49.489646593Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-zew5nutz-confusion_matrix_table","runtime_seconds":0.645259419},{"desc":"uploading media/table/confusion_matrix_table_0_c69eeca29b7866905c4c.table.json","runtime_seconds":0.306526421,"progress":"2.9KB/2.9KB"},{"desc":"uploading output.log","runtime_seconds":0.306514899},{"desc":"uploading wandb-summary.json","runtime_seconds":0.306511052,"progress":"754B/754B"},{"desc":"uploading config.yaml","runtime_seconds":0.000278462,"progress":"2.2KB/2.2KB"}],"total_operations":5}}
+{"time":"2025-03-16T09:17:51.601227653Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T09:17:51.941542171Z","level":"INFO","msg":"stream: closing","id":"zew5nutz"}
+{"time":"2025-03-16T09:17:51.941561156Z","level":"INFO","msg":"handler: closed","stream_id":"zew5nutz"}
+{"time":"2025-03-16T09:17:51.941571405Z","level":"INFO","msg":"writer: Close: closed","stream_id":"zew5nutz"}
+{"time":"2025-03-16T09:17:51.941637849Z","level":"INFO","msg":"sender: closed","stream_id":"zew5nutz"}
+{"time":"2025-03-16T09:17:51.9416495Z","level":"INFO","msg":"stream: closed","id":"zew5nutz"}

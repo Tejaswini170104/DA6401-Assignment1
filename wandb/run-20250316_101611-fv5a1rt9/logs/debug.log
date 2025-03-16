@@ -1,0 +1,19 @@
+2025-03-16 10:16:11,872 INFO    MainThread:30064 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /workspaces/DA6401-Assignment1/wandb/run-20250316_101611-fv5a1rt9/logs/debug.log
+2025-03-16 10:16:11,872 INFO    MainThread:30064 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /workspaces/DA6401-Assignment1/wandb/run-20250316_101611-fv5a1rt9/logs/debug-internal.log
+2025-03-16 10:16:11,872 INFO    MainThread:30064 [wandb_init.py:init():761] calling init triggers
+2025-03-16 10:16:11,873 INFO    MainThread:30064 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activation': 'relu', 'batch_size': 16, 'epochs': 5, 'hidden_layer_size': 32, 'learning_rate': 0.001, 'num_hidden_layers': 4, 'optimizer': 'nesterov', 'weight_decay': 0, 'weight_init': 'random'}
+config: {'name': 'config_1', 'learning_rate': 0.001, 'num_hidden_layers': 3, 'hidden_layer_size': 128, 'optimizer': 'adam', 'activation': 'relu', 'batch_size': 128, 'epochs': 10, 'weight_init': 'xavier', 'weight_decay': 0.0001, '_wandb': {}}
+2025-03-16 10:16:11,873 INFO    MainThread:30064 [wandb_init.py:init():784] starting backend
+2025-03-16 10:16:11,873 INFO    MainThread:30064 [wandb_init.py:init():788] sending inform_init request
+2025-03-16 10:16:11,873 INFO    MainThread:30064 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-03-16 10:16:11,873 INFO    MainThread:30064 [wandb_init.py:init():798] backend started and connected
+2025-03-16 10:16:11,874 INFO    MainThread:30064 [wandb_run.py:_config_callback():1261] config_cb None None {'activation': 'relu', 'batch_size': 16, 'epochs': 5, 'hidden_layer_size': 32, 'learning_rate': 0.001, 'num_hidden_layers': 4, 'optimizer': 'nesterov', 'weight_decay': 0, 'weight_init': 'random'}
+2025-03-16 10:16:11,875 INFO    MainThread:30064 [wandb_init.py:init():891] updated telemetry
+2025-03-16 10:16:11,881 INFO    MainThread:30064 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-16 10:16:12,301 INFO    MainThread:30064 [wandb_init.py:init():990] starting run threads in backend
+2025-03-16 10:16:12,416 INFO    MainThread:30064 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-16 10:16:12,417 INFO    MainThread:30064 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-16 10:16:12,417 INFO    MainThread:30064 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-16 10:16:12,417 INFO    MainThread:30064 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-16 10:16:12,417 INFO    MainThread:30064 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-16 10:16:35,421 INFO    MsgRouterThr:30064 [mailbox.py:close():129] Closing mailbox, abandoning 5 handles.

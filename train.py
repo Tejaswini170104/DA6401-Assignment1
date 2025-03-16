@@ -100,8 +100,8 @@ def compute_accuracy(y_true, y_pred):
 # Neural Network Class
 # ---------------------------
 class FeedForwardNN:
-    def __init__(self, input_dim, output_dim, num_hidden_layers, hidden_layer_dim, lr=0.01,
-                 act_hidden="sigmoid", act_output="softmax", weight_init="random", weight_decay = 0.0):
+    def __init__(self, input_dim, output_dim, num_hidden_layers, hidden_layer_dim, lr=0.001,
+                 act_hidden="relu", act_output="softmax", weight_init="xavier", weight_decay = 0.0):
         """
         Initializes the feed-forward neural network.
         Bias is incorporated by appending a column of ones to the input of each layer.
@@ -174,7 +174,7 @@ class FeedForwardNN:
         return a
 
 
-    def compute_loss(self, Y_pred, Y_true, weight_decay=0.0):
+    def compute_loss(self, Y_pred, Y_true, weight_decay=0.0, loss_type="cross_entropy"):
         """
         Computes cross-entropy loss for multi-class classification.
         Args:
@@ -184,8 +184,12 @@ class FeedForwardNN:
             float: Cross-entropy loss.
         """
         """Compute loss with optional weight decay."""
-        loss = np.mean(-np.sum(Y_true * np.log(Y_pred + 1e-8), axis=1))  # Cross-entropy loss
-   
+        if loss_type == "cross_entropy":
+            loss = -np.mean(np.sum(Y_true * np.log(Y_pred + 1e-8), axis=1))
+        elif loss_type == "squared_error":
+            loss = 0.5 * np.mean(np.sum((Y_true - Y_pred) ** 2, axis=1))
+        else:
+            raise ValueError("Unsupported loss type")
         # Add weight decay (L2 Regularization)
         if weight_decay > 0:
             l2_penalty = sum(np.sum(W ** 2) for W in self.W) * (weight_decay / 2)
@@ -194,7 +198,7 @@ class FeedForwardNN:
    
 
 
-    def backward(self, X, Y_true, weight_decay = 0.0):
+    def backward(self, X, Y_true, weight_decay = 0.0, loss_type="cross_entropy"):
         """
         Backward propagation: computes gradients for weights.
         Args:
@@ -216,7 +220,11 @@ class FeedForwardNN:
 
             if i == self.num_layers - 1:
                 # For softmax with cross-entropy loss.
-                dZ = (Y_pred - Y_true) / n_samples
+                if loss_type == "cross_entropy":
+                    dZ = (Y_pred - Y_true) / n_samples
+                elif loss_type == "squared_error":
+                    # squared error uses raw difference, no need for softmax derivative
+                    dZ = (Y_pred - Y_true) 
             else:
                 dZ = dA * activation_derivative(z, self.act_hidden)
 
@@ -244,7 +252,7 @@ class FeedForwardNN:
             self.W[i] -= self.lr * grads[i]
 
 
-    def train(self, X, Y, epochs=20, batch_size=None, print_every=1, optimizer=None):
+    def train(self, X, Y, epochs=20, batch_size=None, print_every=1, optimizer=None, loss_type="cross_entropy"):
         """
         Trains the neural network with support for mini-batch processing.
         Args:
@@ -298,7 +306,7 @@ class FeedForwardNN:
 
             loss_history.append(epoch_loss)
             if (epoch + 1) % print_every == 0:
-                print(f"Epoch {epoch+1}/{epochs}, Loss: {epoch_loss:.4f}")
+                print(f"Epoch {epoch+1}/{epochs}|{loss_type} Loss: {epoch_loss:.4f}")
 
 
         return loss_history
@@ -308,7 +316,7 @@ class FeedForwardNN:
 # Optimizer Implementation
 # ---------------------------
 class Optimizer:
-    def __init__(self, parameters, optimizer_type="sgd", lr=0.01, momentum=0.9, beta=0.9, beta1=0.9, beta2=0.999, epsilon=1e-8):
+    def __init__(self, parameters, optimizer_type="nadam", lr=0.001, momentum=0.9, beta=0.9, beta1=0.9, beta2=0.999, epsilon=1e-8):
         """
         Initializes the optimizer.
         Args:
@@ -632,9 +640,9 @@ for i in range(num_classes):
 wandb.log({
     "confusion_matrix": wandb.plot.confusion_matrix(
         probs=None,
-        y_true=y_test,
-        preds=test_predictions,
-        class_names=class_labels
+        y_true=np.argmax(y_test, axis=1).tolist(),  # Keep as integers
+        preds=test_predictions.tolist(),            # Keep as integers
+        class_names=[str(i) for i in class_labels]
     )
 })
 
@@ -642,129 +650,6 @@ wandb.log({
 wandb.finish()
 
 import matplotlib.pyplot as plt
-
-class FeedForwardNN:
-    def __init__(self, input_dim, output_dim, num_hidden_layers, hidden_layer_dim, lr=0.01,
-                 act_hidden="sigmoid", act_output="softmax", weight_init="random", weight_decay=0.0):
-        self.lr = lr
-        self.act_hidden = act_hidden
-        self.act_output = act_output
-        self.weight_init = weight_init
-        self.num_hidden_layers = num_hidden_layers
-        self.layer_dims = [input_dim] + [hidden_layer_dim] * num_hidden_layers + [output_dim]
-        self.num_layers = len(self.layer_dims) - 1
-        self.W = self.initialize_weights(input_dim, hidden_layer_dim, output_dim)
-
-    def initialize_weights(self, input_dim, hidden_dim, output_dim):
-        W = []
-        layer_sizes = [input_dim] + [hidden_dim] * self.num_hidden_layers + [output_dim]
-        for i in range(len(layer_sizes) - 1):
-            input_size = layer_sizes[i] + 1
-            output_size = layer_sizes[i + 1]
-            if self.weight_init == "xavier":
-                limit = np.sqrt(6 / (input_size + output_size))
-                W.append(np.random.uniform(-limit, limit, (input_size, output_size)))
-            else:
-                W.append(np.random.randn(input_size, output_size) * 0.01)
-        return W
-
-    def forward(self, X):
-        n_samples = X.shape[0]
-        self.a_list = []
-        self.z_list = []
-        a = np.concatenate([X, np.ones((n_samples, 1))], axis=1)
-        self.a_list.append(a)
-
-        for i in range(self.num_layers):
-            z = a @ self.W[i]
-            self.z_list.append(z)
-            if i < self.num_layers - 1:
-                a = activate(z, self.act_hidden)
-                a = np.concatenate([a, np.ones((n_samples, 1))], axis=1)
-            else:
-                a = activate(z, self.act_output)
-            self.a_list.append(a)
-
-        return a
-    
-    def compute_loss(self, Y_pred, Y_true, loss_type="cross_entropy", weight_decay=0.0):
-        if loss_type == "cross_entropy":
-            loss = -np.mean(np.sum(Y_true * np.log(Y_pred + 1e-8), axis=1))
-        elif loss_type == "squared_error":
-            loss = 0.5 * np.mean(np.sum((Y_true - Y_pred) ** 2, axis=1))
-        else:
-            raise ValueError("Unsupported loss type: " + loss_type)
-
-        # L2 Regularization (Weight Decay)
-        if weight_decay > 0:
-            l2_penalty = sum(np.sum(W ** 2) for W in self.W) * (weight_decay / 2)
-            loss += l2_penalty
-
-        return loss
-    
-    def backward(self, X, Y_true, loss_type="cross_entropy", weight_decay=0.0):
-        grads = [None] * self.num_layers
-        n_samples = X.shape[0]
-        Y_pred = self.a_list[-1]
-
-        for i in reversed(range(self.num_layers)):
-            z = self.z_list[i]
-            a_prev = self.a_list[i]
-            if i == self.num_layers - 1:
-                if loss_type == "cross_entropy":
-                    dZ = (Y_pred - Y_true) / n_samples
-                elif loss_type == "squared_error":
-                    dZ = (Y_pred - Y_true) * activation_derivative(z, self.act_output)
-            else:
-                dZ = dA * activation_derivative(z, self.act_hidden)
-
-            dW = a_prev.T @ dZ
-            if weight_decay > 0:
-                dW += weight_decay * self.W[i]
-            grads[i] = dW
-
-            dA = dZ @ self.W[i].T
-            dA = dA[:, :-1]
-
-        return grads
-
-    def update_params(self, grads):
-        for i in range(self.num_layers):
-            self.W[i] -= self.lr * grads[i]
-
-    def train(self, X, Y, epochs=20, batch_size=None, loss_type="cross_entropy"):
-        n_samples = X.shape[0]
-        if batch_size is None:
-            batch_size = n_samples
-
-        loss_history = []
-        for epoch in range(epochs):
-            indices = np.random.permutation(n_samples)
-            X_shuffled = X[indices]
-            Y_shuffled = Y[indices]
-
-            epoch_loss = 0.0
-            for start in range(0, n_samples, batch_size):
-                end = start + batch_size
-                X_batch = X_shuffled[start:end]
-                Y_batch = Y_shuffled[start:end]
-
-                Y_pred = self.forward(X_batch)
-                loss = self.compute_loss(Y_pred, Y_batch, loss_type)
-                epoch_loss += loss * (X_batch.shape[0] / n_samples)
-
-                grads = self.backward(X_batch, Y_batch, loss_type)
-                self.update_params(grads)
-
-            loss_history.append(epoch_loss)
-            wandb.log({f"{loss_type}_loss": epoch_loss})
-
-            if (epoch + 1) % 1 == 0:
-                print(f"Epoch {epoch + 1}/{epochs} | {loss_type} Loss: {epoch_loss:.4f}")
-
-        return loss_history
-
-# ----------------------------------------
 # Initialize W&B
 wandb.init(project="fashion-mnist-classification", name="loss-comparison")
 
@@ -776,14 +661,23 @@ y_train = np.eye(10)[y_train]
 # Train using cross entropy loss
 nn_cross_entropy = FeedForwardNN(input_dim=28*28, output_dim=10,
                                  num_hidden_layers=2, hidden_layer_dim=128,
-                                 lr=0.01)
-cross_entropy_loss = nn_cross_entropy.train(x_train, y_train, epochs=20, loss_type="cross_entropy")
+                                 lr=0.001)
+
+# Select optimizer (options: "sgd", "momentum", "nesterov", "rmsprop", "adam", "nadam")
+optimizer_type = "adam"
+optimizer = Optimizer(parameters=nn_cross_entropy.W, optimizer_type=optimizer_type, lr=0.001)
+
+cross_entropy_loss = nn_cross_entropy.train(x_train, y_train, epochs=10,optimizer=optimizer, loss_type="cross_entropy")
 
 # Train using squared error loss
 nn_squared_error = FeedForwardNN(input_dim=28*28, output_dim=10,
                                  num_hidden_layers=2, hidden_layer_dim=128,
-                                 lr=0.01)
-squared_error_loss = nn_squared_error.train(x_train, y_train, epochs=20, loss_type="squared_error")
+                                 lr=0.001)
+# Select optimizer (options: "sgd", "momentum", "nesterov", "rmsprop", "adam", "nadam")
+optimizer_type = "adam"
+optimizer = Optimizer(parameters=nn_squared_error.W, optimizer_type=optimizer_type, lr=0.001)
+
+squared_error_loss = nn_squared_error.train(x_train, y_train, epochs=10, loss_type="squared_error")
 
 # Plot loss curves
 plt.figure(figsize=(10, 6))
@@ -797,7 +691,7 @@ plt.grid()
 plt.show()
 
 # Log to W&B
-wandb.log({"loss_comparison": wandb.Image(plt)})
+wandb.log({"loss_comparison": wandb.Image(plt.gcf())})
 
 # Finish W&B
 wandb.finish()
@@ -845,7 +739,7 @@ configs = [
         "learning_rate": 0.01,
         "num_hidden_layers": 3,
         "hidden_layer_size": 64,
-        "optimizer": "momentum",
+        "optimizer": "nadam",
         "activation": "relu",
         "batch_size": 128,
         "epochs": 10,
@@ -913,9 +807,9 @@ for config in configs:
     wandb.log({
         "confusion_matrix": wandb.plot.confusion_matrix(
             probs=None,
-            y_true=[class_labels[i] for i in np.argmax(y_test, axis=1)],
-            preds=[class_labels[i] for i in test_predictions],
-            class_names=class_labels
+            y_true=np.argmax(y_test, axis=1).tolist(),  # Keep as integers
+            preds=test_predictions.tolist(),            # Keep as integers
+            class_names=[str(i) for i in class_labels]  # For display only
         )
     })
 
