@@ -1,0 +1,16 @@
+{"time":"2025-03-16T13:53:26.671583076Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_135326-ovx4y5xj/logs/debug-core.log"}
+{"time":"2025-03-16T13:53:26.775527081Z","level":"INFO","msg":"created new stream","id":"ovx4y5xj"}
+{"time":"2025-03-16T13:53:26.775585981Z","level":"INFO","msg":"stream: started","id":"ovx4y5xj"}
+{"time":"2025-03-16T13:53:26.77568726Z","level":"INFO","msg":"handler: started","stream_id":"ovx4y5xj"}
+{"time":"2025-03-16T13:53:26.775720482Z","level":"INFO","msg":"writer: Do: started","stream_id":"ovx4y5xj"}
+{"time":"2025-03-16T13:53:26.775840216Z","level":"INFO","msg":"sender: started","stream_id":"ovx4y5xj"}
+{"time":"2025-03-16T13:53:27.138456818Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T13:53:27.720630883Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T13:53:27.721293223Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T13:53:28.685922662Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-ovx4y5xj-confusion_matrix_table","runtime_seconds":0.621152172},{"desc":"uploading media/table/confusion_matrix_table_0_eefaa67704dc34cc1152.table.json","runtime_seconds":0.279782954,"progress":"2.9KB/2.9KB"},{"desc":"uploading output.log","runtime_seconds":0.279771052},{"desc":"uploading wandb-summary.json","runtime_seconds":0.279766723,"progress":"754B/754B"}],"total_operations":4}}
+{"time":"2025-03-16T13:53:30.904464501Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T13:53:31.241389507Z","level":"INFO","msg":"stream: closing","id":"ovx4y5xj"}
+{"time":"2025-03-16T13:53:31.241413532Z","level":"INFO","msg":"handler: closed","stream_id":"ovx4y5xj"}
+{"time":"2025-03-16T13:53:31.241425825Z","level":"INFO","msg":"writer: Close: closed","stream_id":"ovx4y5xj"}
+{"time":"2025-03-16T13:53:31.241491638Z","level":"INFO","msg":"sender: closed","stream_id":"ovx4y5xj"}
+{"time":"2025-03-16T13:53:31.241503029Z","level":"INFO","msg":"stream: closed","id":"ovx4y5xj"}

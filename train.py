@@ -549,11 +549,7 @@ def train(config=None):
 
 # Run the sweep
 wandb.agent(sweep_id, function=train, count=1)
-
-
-# Initialize wandb run (modify project name as needed)
-wandb.init(project="mnist-fashion-classification", name="best_model_evaluation")
-
+wandb.finish()
 
 # BEST Neural network configuration.
 input_dim = 28 * 28  # 784 features.
@@ -605,7 +601,6 @@ test_predictions = np.argmax(Y_pred_test, axis=1)
 test_accuracy = compute_accuracy(y_test, test_predictions)
 print(f"Test Accuracy: {test_accuracy:.2%}")
 
-wandb.finish()
 
 # Compute Confusion Matrix using NumPy
 # Initialize the W&B run
@@ -788,7 +783,11 @@ for config in configs:
     # test accuracy
     print(f"Test Accuracy for {config['name']}: {test_accuracy:.2%}")   
 
+# Store results
+result = {
+    "name": config["name"],
+    "test_accuracy": test_accuracy
+}
 # Report results
 print("\n=== Final Results ===")
-for result in results:
-    print(f"{result['name']}: {result['test_accuracy']:.2%}")
+print(f"{result['name']}: {result['test_accuracy']:.2%}")
