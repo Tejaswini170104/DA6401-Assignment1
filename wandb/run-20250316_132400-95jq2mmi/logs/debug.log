@@ -1,0 +1,29 @@
+2025-03-16 13:24:00,782 INFO    MainThread:43853 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-16 13:24:00,782 INFO    MainThread:43853 [wandb_setup.py:_flush():67] Configure stats pid to 43853
+2025-03-16 13:24:00,782 INFO    MainThread:43853 [wandb_setup.py:_flush():67] Loading settings from /home/codespace/.config/wandb/settings
+2025-03-16 13:24:00,782 INFO    MainThread:43853 [wandb_setup.py:_flush():67] Loading settings from /workspaces/DA6401-Assignment1/wandb/settings
+2025-03-16 13:24:00,782 INFO    MainThread:43853 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-16 13:24:00,783 INFO    MainThread:43853 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /workspaces/DA6401-Assignment1/wandb/run-20250316_132400-95jq2mmi/logs/debug.log
+2025-03-16 13:24:00,783 INFO    MainThread:43853 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /workspaces/DA6401-Assignment1/wandb/run-20250316_132400-95jq2mmi/logs/debug-internal.log
+2025-03-16 13:24:00,783 INFO    MainThread:43853 [wandb_init.py:init():761] calling init triggers
+2025-03-16 13:24:00,783 INFO    MainThread:43853 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-03-16 13:24:00,783 INFO    MainThread:43853 [wandb_init.py:init():784] starting backend
+2025-03-16 13:24:00,783 INFO    MainThread:43853 [wandb_init.py:init():788] sending inform_init request
+2025-03-16 13:24:00,785 INFO    MainThread:43853 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-03-16 13:24:00,785 INFO    MainThread:43853 [wandb_init.py:init():798] backend started and connected
+2025-03-16 13:24:00,786 INFO    MainThread:43853 [wandb_init.py:init():891] updated telemetry
+2025-03-16 13:24:00,793 INFO    MainThread:43853 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-16 13:24:01,275 INFO    MainThread:43853 [wandb_init.py:init():990] starting run threads in backend
+2025-03-16 13:24:01,393 INFO    MainThread:43853 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-16 13:24:01,394 INFO    MainThread:43853 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-16 13:24:01,394 INFO    MainThread:43853 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-16 13:24:01,394 INFO    MainThread:43853 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-16 13:24:01,396 INFO    MainThread:43853 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-16 13:24:01,992 INFO    MainThread:43853 [wandb_run.py:_finish():2112] finishing run tejaswiniksssn-indian-institute-of-technology-madras/mnist-fashion-classification/95jq2mmi
+2025-03-16 13:24:01,992 INFO    MainThread:43853 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 0
+2025-03-16 13:24:01,992 INFO    MainThread:43853 [wandb_run.py:_restore():2322] restore
+2025-03-16 13:24:01,992 INFO    MainThread:43853 [wandb_run.py:_restore():2328] restore done
+2025-03-16 13:24:04,194 INFO    MainThread:43853 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-16 13:24:04,194 INFO    MainThread:43853 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-16 13:24:04,194 INFO    MainThread:43853 [wandb_run.py:_footer_sync_info():3917] logging synced files

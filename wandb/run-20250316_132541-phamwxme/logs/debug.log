@@ -1,0 +1,26 @@
+2025-03-16 13:25:41,647 INFO    MainThread:43853 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /workspaces/DA6401-Assignment1/wandb/run-20250316_132541-phamwxme/logs/debug.log
+2025-03-16 13:25:41,647 INFO    MainThread:43853 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /workspaces/DA6401-Assignment1/wandb/run-20250316_132541-phamwxme/logs/debug-internal.log
+2025-03-16 13:25:41,647 INFO    MainThread:43853 [wandb_init.py:init():761] calling init triggers
+2025-03-16 13:25:41,647 INFO    MainThread:43853 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activation': 'relu', 'batch_size': 64, 'epochs': 5, 'hidden_layer_size': 32, 'learning_rate': 0.001, 'num_hidden_layers': 5, 'optimizer': 'rmsprop', 'weight_decay': 0, 'weight_init': 'random'}
+config: {'_wandb': {}}
+2025-03-16 13:25:41,647 INFO    MainThread:43853 [wandb_init.py:init():784] starting backend
+2025-03-16 13:25:41,647 INFO    MainThread:43853 [wandb_init.py:init():788] sending inform_init request
+2025-03-16 13:25:41,648 INFO    MainThread:43853 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-03-16 13:25:41,648 INFO    MainThread:43853 [wandb_init.py:init():798] backend started and connected
+2025-03-16 13:25:41,649 INFO    MainThread:43853 [wandb_run.py:_config_callback():1261] config_cb None None {'activation': 'relu', 'batch_size': 64, 'epochs': 5, 'hidden_layer_size': 32, 'learning_rate': 0.001, 'num_hidden_layers': 5, 'optimizer': 'rmsprop', 'weight_decay': 0, 'weight_init': 'random'}
+2025-03-16 13:25:41,649 INFO    MainThread:43853 [wandb_init.py:init():891] updated telemetry
+2025-03-16 13:25:41,654 INFO    MainThread:43853 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-16 13:25:42,106 INFO    MainThread:43853 [wandb_init.py:init():990] starting run threads in backend
+2025-03-16 13:25:42,254 INFO    MainThread:43853 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-16 13:25:42,255 INFO    MainThread:43853 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-16 13:25:42,256 INFO    MainThread:43853 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-16 13:25:42,256 INFO    MainThread:43853 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-16 13:25:42,256 INFO    MainThread:43853 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-16 13:25:42,273 INFO    MainThread:43853 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'confusion_matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'confusion_matrix_table'}], 'fields': []}]}]}}} None
+2025-03-16 13:25:42,613 INFO    MainThread:43853 [wandb_run.py:_finish():2112] finishing run tejaswiniksssn-indian-institute-of-technology-madras/mnist-fashion-classification/phamwxme
+2025-03-16 13:25:42,613 INFO    MainThread:43853 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 0
+2025-03-16 13:25:42,613 INFO    MainThread:43853 [wandb_run.py:_restore():2322] restore
+2025-03-16 13:25:42,613 INFO    MainThread:43853 [wandb_run.py:_restore():2328] restore done
+2025-03-16 13:25:46,219 INFO    MainThread:43853 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-16 13:25:46,219 INFO    MainThread:43853 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-16 13:25:46,219 INFO    MainThread:43853 [wandb_run.py:_footer_sync_info():3917] logging synced files

@@ -1,0 +1,341 @@
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 643, in <module>
+    "confusion_matrix": wandb.plot.confusion_matrix(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1298, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1

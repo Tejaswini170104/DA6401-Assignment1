@@ -1,0 +1,16 @@
+{"time":"2025-03-16T13:25:00.783601134Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_132500-phamwxme/logs/debug-core.log"}
+{"time":"2025-03-16T13:25:00.886980715Z","level":"INFO","msg":"created new stream","id":"phamwxme"}
+{"time":"2025-03-16T13:25:00.887018485Z","level":"INFO","msg":"stream: started","id":"phamwxme"}
+{"time":"2025-03-16T13:25:00.887069869Z","level":"INFO","msg":"writer: Do: started","stream_id":"phamwxme"}
+{"time":"2025-03-16T13:25:00.887087875Z","level":"INFO","msg":"sender: started","stream_id":"phamwxme"}
+{"time":"2025-03-16T13:25:00.887108924Z","level":"INFO","msg":"handler: started","stream_id":"phamwxme"}
+{"time":"2025-03-16T13:25:01.229855416Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T13:25:39.935818046Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T13:25:39.936433028Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T13:25:40.936933388Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.373967685,"progress":"449B/449B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.373957285,"progress":"25B/25B"},{"desc":"uploading config.yaml","runtime_seconds":0.065631166,"progress":"863B/863B"}],"total_operations":3}}
+{"time":"2025-03-16T13:25:41.294016493Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T13:25:41.644551174Z","level":"INFO","msg":"stream: closing","id":"phamwxme"}
+{"time":"2025-03-16T13:25:41.644571833Z","level":"INFO","msg":"handler: closed","stream_id":"phamwxme"}
+{"time":"2025-03-16T13:25:41.644584246Z","level":"INFO","msg":"writer: Close: closed","stream_id":"phamwxme"}
+{"time":"2025-03-16T13:25:41.644659105Z","level":"INFO","msg":"sender: closed","stream_id":"phamwxme"}
+{"time":"2025-03-16T13:25:41.64467199Z","level":"INFO","msg":"stream: closed","id":"phamwxme"}

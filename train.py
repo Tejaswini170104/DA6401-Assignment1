@@ -548,7 +548,7 @@ def train(config=None):
 
 
 # Run the sweep
-wandb.agent(sweep_id, function=train, count=30)
+wandb.agent(sweep_id, function=train, count=1)
 
 
 # Initialize wandb run (modify project name as needed)
@@ -613,6 +613,7 @@ wandb.init(project="mnist-fashion-classification", name="confusion_matrix_sweep"
 num_classes = 10
 conf_matrix = np.zeros((num_classes, num_classes), dtype=int)
 
+
 for true, pred in zip(y_test, test_predictions):
     conf_matrix[true, pred] += 1
 
@@ -621,6 +622,7 @@ class_labels = [
     "T-shirt/top", "Trouser", "Pullover", "Dress", "Coat",
     "Sandal", "Shirt", "Sneaker", "Bag", "Ankle boot"
 ]
+
 conf_matrix_df = pd.DataFrame(conf_matrix, index=class_labels, columns=class_labels)
 
 # Create confusion matrix dictionary
@@ -637,22 +639,22 @@ for i in range(num_classes):
             conf_matrix_dict["y_pred"].append(class_labels[j])
             conf_matrix_dict["count"].append(conf_matrix[i][j])
 
-# Log using `wandb.plot.confusion_matrix`
+# Create the confusion matrix plot
+cm = wandb.plot.confusion_matrix(
+    y_true=y_test,
+    preds=test_predictions,
+    class_names=class_labels
+)
+
 wandb.log({
-    "confusion_matrix_table": wandb.Table(dataframe=conf_matrix_df),
-    "confusion_matrix": wandb.plot.confusion_matrix(
-        y_true=np.argmax(y_test, axis=1).tolist(),  # Keep as integers
-        preds=test_predictions.tolist(),            # Keep as integers
-        class_names=class_labels
-    )
+    "confusion_matrix": cm,
+    "confusion_matrix_table": wandb.Table(dataframe=conf_matrix_df)
 })
 
 # Finish wandb run
 wandb.finish()
 
 import matplotlib.pyplot as plt
-# Initialize W&B
-wandb.init(project="mnist-fashion-classification", name="loss-comparison")
 
 # Load and preprocess data
 (x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
@@ -691,11 +693,6 @@ plt.legend()
 plt.grid()
 plt.show()
 
-# Log to W&B
-wandb.log({"loss_comparison": wandb.Image(plt.gcf())})
-
-# Finish W&B
-wandb.finish()
 
 from keras.datasets import mnist # type: ignore
 

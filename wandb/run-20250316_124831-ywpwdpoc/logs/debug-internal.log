@@ -1,0 +1,16 @@
+{"time":"2025-03-16T12:48:31.153575869Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_124831-ywpwdpoc/logs/debug-core.log"}
+{"time":"2025-03-16T12:48:31.256820586Z","level":"INFO","msg":"created new stream","id":"ywpwdpoc"}
+{"time":"2025-03-16T12:48:31.25685483Z","level":"INFO","msg":"stream: started","id":"ywpwdpoc"}
+{"time":"2025-03-16T12:48:31.256922867Z","level":"INFO","msg":"handler: started","stream_id":"ywpwdpoc"}
+{"time":"2025-03-16T12:48:31.25695621Z","level":"INFO","msg":"writer: Do: started","stream_id":"ywpwdpoc"}
+{"time":"2025-03-16T12:48:31.256972417Z","level":"INFO","msg":"sender: started","stream_id":"ywpwdpoc"}
+{"time":"2025-03-16T12:48:31.599497956Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T12:49:02.380343041Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T12:49:02.38083058Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T12:49:03.38158476Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/loss_comparison_0_3438b761888b62a3fa89.png","runtime_seconds":0.657958437,"progress":"39.1KB/39.1KB"},{"desc":"uploading output.log","runtime_seconds":0.270976745,"progress":"762B/762B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.270964001,"progress":"331B/331B"}],"total_operations":3}}
+{"time":"2025-03-16T12:49:03.850207057Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T12:49:04.184432887Z","level":"INFO","msg":"stream: closing","id":"ywpwdpoc"}
+{"time":"2025-03-16T12:49:04.184457623Z","level":"INFO","msg":"handler: closed","stream_id":"ywpwdpoc"}
+{"time":"2025-03-16T12:49:04.184470668Z","level":"INFO","msg":"writer: Close: closed","stream_id":"ywpwdpoc"}
+{"time":"2025-03-16T12:49:04.184539026Z","level":"INFO","msg":"sender: closed","stream_id":"ywpwdpoc"}
+{"time":"2025-03-16T12:49:04.184551449Z","level":"INFO","msg":"stream: closed","id":"ywpwdpoc"}

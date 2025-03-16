@@ -1,0 +1,16 @@
+{"time":"2025-03-16T13:25:41.685592105Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_132541-phamwxme/logs/debug-core.log"}
+{"time":"2025-03-16T13:25:41.78897567Z","level":"INFO","msg":"created new stream","id":"phamwxme"}
+{"time":"2025-03-16T13:25:41.789013561Z","level":"INFO","msg":"stream: started","id":"phamwxme"}
+{"time":"2025-03-16T13:25:41.789088311Z","level":"INFO","msg":"handler: started","stream_id":"phamwxme"}
+{"time":"2025-03-16T13:25:41.789119599Z","level":"INFO","msg":"writer: Do: started","stream_id":"phamwxme"}
+{"time":"2025-03-16T13:25:41.789155389Z","level":"INFO","msg":"sender: started","stream_id":"phamwxme"}
+{"time":"2025-03-16T13:25:42.107547402Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T13:25:42.649562334Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T13:25:42.650140457Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T13:25:43.615017772Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading requirements.txt","runtime_seconds":1.028016571,"progress":"2.8KB/2.8KB"},{"desc":"uploading artifact run-phamwxme-confusion_matrix_table","runtime_seconds":0.635168311},{"desc":"uploading media/table/confusion_matrix_table_0_6ff14de5a8bca25d75ac.table.json","runtime_seconds":0.297355778,"progress":"2.9KB/2.9KB"},{"desc":"uploading output.log","runtime_seconds":0.297343104},{"desc":"uploading wandb-summary.json","runtime_seconds":0.297337453,"progress":"753B/753B"}],"total_operations":5}}
+{"time":"2025-03-16T13:25:45.854608962Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T13:25:46.220106255Z","level":"INFO","msg":"stream: closing","id":"phamwxme"}
+{"time":"2025-03-16T13:25:46.220125571Z","level":"INFO","msg":"handler: closed","stream_id":"phamwxme"}
+{"time":"2025-03-16T13:25:46.220147061Z","level":"INFO","msg":"writer: Close: closed","stream_id":"phamwxme"}
+{"time":"2025-03-16T13:25:46.220210099Z","level":"INFO","msg":"sender: closed","stream_id":"phamwxme"}
+{"time":"2025-03-16T13:25:46.220222923Z","level":"INFO","msg":"stream: closed","id":"phamwxme"}
