@@ -601,21 +601,21 @@ test_predictions = np.argmax(Y_pred_test, axis=1)
 test_accuracy = compute_accuracy(y_test, test_predictions)
 print(f"Test Accuracy: {test_accuracy:.2%}")
 
-wandb.finish()
 # Compute Confusion Matrix using NumPy
 # Initialize the W&B run
 # Ensure y_test and test_predictions are in the correct format
-if len(y_test.shape) > 1:
-    y_test = np.argmax(y_test, axis=1)  # Convert one-hot encoding to labels
-if len(test_predictions.shape) > 1:
-    test_predictions = np.argmax(test_predictions, axis=1)
+# Convert y_test_onehot back to class indices for confusion matrix
+y_test_labels = np.argmax(y_test_onehot, axis=1)
 
-wandb.init(project="classification", name="confusion_matrix_sweep")
+if wandb.run is not None:
+    wandb.finish()
+
+wandb.init(project="classification", name="confusion_matrix_table")
 num_classes = 10
 conf_matrix = np.zeros((num_classes, num_classes), dtype=int)
 
 
-for true, pred in zip(y_test, test_predictions):
+for true, pred in zip(y_test_labels, test_predictions):
     conf_matrix[true, pred] += 1
 
 # Define class labels
@@ -626,33 +626,45 @@ class_labels = [
 
 conf_matrix_df = pd.DataFrame(conf_matrix.astype(int), index=class_labels, columns=class_labels)
 
-# Create confusion matrix dictionary
-conf_matrix_dict = {
-    "y_true": [],
-    "y_pred": [],
-    "count": []
-}
-
-for i in range(num_classes):
-    for j in range(num_classes):
-        if conf_matrix[i][j] > 0:
-            conf_matrix_dict["y_true"].append(class_labels[i])
-            conf_matrix_dict["y_pred"].append(class_labels[j])
-            conf_matrix_dict["count"].append(conf_matrix[i][j])
-
-# Create the confusion matrix plot
-cm = wandb.plot.confusion_matrix(
-    y_true=y_test.tolist(),
-    preds=test_predictions.tolist(),
-    class_names=class_labels
-)
-
 wandb.log({
-    "confusion_matrix": cm,
     "confusion_matrix_table": wandb.Table(dataframe=conf_matrix_df)
 })
 
 # Finish wandb run
+wandb.finish()
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+# Initialize a new W&B run
+wandb.init(project="classification", name="confusion_matrix_heatmap_artifact")
+
+# Create a DataFrame from the confusion matrix
+conf_matrix_df = pd.DataFrame(conf_matrix.astype(int), index=class_labels, columns=class_labels)
+
+# ✅ Create the heatmap using Seaborn
+plt.figure(figsize=(10, 8))
+sns.heatmap(conf_matrix_df, annot=True, cmap="coolwarm", fmt="d", xticklabels=class_labels, yticklabels=class_labels)
+plt.title("Confusion Matrix Heatmap")
+plt.xlabel("Predicted Label")
+plt.ylabel("True Label")
+
+# ✅ Save the heatmap as a file
+heatmap_path = "confusion_matrix_heatmap.png"
+plt.savefig(heatmap_path)  # Save as PNG
+plt.close()  # Close the plot to avoid memory leaks
+
+# ✅ Create a W&B artifact
+artifact = wandb.Artifact(
+    name="confusion_matrix_heatmap",
+    type="heatmap",
+    description="Confusion Matrix Heatmap for classification task"
+)
+artifact.add_file(heatmap_path)  # Attach the file to the artifact
+
+# ✅ Log the artifact to W&B
+wandb.log_artifact(artifact)
+
+# ✅ Finish the W&B run
 wandb.finish()
 
 wandb.init(project="classification", name="loss-comparison")
@@ -682,7 +694,7 @@ optimizer = Optimizer(parameters=nn_squared_error.W, optimizer_type=optimizer_ty
 
 squared_error_loss = nn_squared_error.train(x_train, y_train, epochs=10, loss_type="squared_error")
 
-# ✅ Directly log loss curves to W&B as a line plot
+# Directly log loss curves to W&B as a line plot
 for epoch in range(10):
     wandb.log({
         "Cross Entropy Loss": cross_entropy_loss[epoch],

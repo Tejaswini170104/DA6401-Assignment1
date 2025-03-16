@@ -1,0 +1,16 @@
+{"time":"2025-03-16T18:20:09.646547463Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_182009-m2qvw7qz/logs/debug-core.log"}
+{"time":"2025-03-16T18:20:09.753797968Z","level":"INFO","msg":"created new stream","id":"m2qvw7qz"}
+{"time":"2025-03-16T18:20:09.753828014Z","level":"INFO","msg":"stream: started","id":"m2qvw7qz"}
+{"time":"2025-03-16T18:20:09.753894859Z","level":"INFO","msg":"handler: started","stream_id":"m2qvw7qz"}
+{"time":"2025-03-16T18:20:09.753920417Z","level":"INFO","msg":"writer: Do: started","stream_id":"m2qvw7qz"}
+{"time":"2025-03-16T18:20:09.753939355Z","level":"INFO","msg":"sender: started","stream_id":"m2qvw7qz"}
+{"time":"2025-03-16T18:20:10.154837523Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T18:20:10.805506315Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T18:20:10.806000538Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T18:20:11.806496659Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-m2qvw7qz-confusion_matrix_table","runtime_seconds":0.745200902},{"desc":"uploading media/table/confusion_matrix_table_0_66eeaa3266a59f82b49b.table.json","runtime_seconds":0.39575041,"progress":"2.9KB/2.9KB"},{"desc":"uploading output.log","runtime_seconds":0.395741112},{"desc":"uploading wandb-summary.json","runtime_seconds":0.395737436,"progress":"754B/754B"},{"desc":"uploading config.yaml","runtime_seconds":0.099694618,"progress":"2.2KB/2.2KB"}],"total_operations":5}}
+{"time":"2025-03-16T18:20:13.812882308Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T18:20:14.138123198Z","level":"INFO","msg":"stream: closing","id":"m2qvw7qz"}
+{"time":"2025-03-16T18:20:14.138194541Z","level":"INFO","msg":"handler: closed","stream_id":"m2qvw7qz"}
+{"time":"2025-03-16T18:20:14.138307762Z","level":"INFO","msg":"writer: Close: closed","stream_id":"m2qvw7qz"}
+{"time":"2025-03-16T18:20:14.138347436Z","level":"INFO","msg":"sender: closed","stream_id":"m2qvw7qz"}
+{"time":"2025-03-16T18:20:14.138599166Z","level":"INFO","msg":"stream: closed","id":"m2qvw7qz"}
