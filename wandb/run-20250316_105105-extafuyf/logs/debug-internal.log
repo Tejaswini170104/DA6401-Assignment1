@@ -1,0 +1,16 @@
+{"time":"2025-03-16T10:51:05.023493964Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_105105-extafuyf/logs/debug-core.log"}
+{"time":"2025-03-16T10:51:05.127777358Z","level":"INFO","msg":"created new stream","id":"extafuyf"}
+{"time":"2025-03-16T10:51:05.127812363Z","level":"INFO","msg":"stream: started","id":"extafuyf"}
+{"time":"2025-03-16T10:51:05.12786607Z","level":"INFO","msg":"writer: Do: started","stream_id":"extafuyf"}
+{"time":"2025-03-16T10:51:05.127990161Z","level":"INFO","msg":"handler: started","stream_id":"extafuyf"}
+{"time":"2025-03-16T10:51:05.128015729Z","level":"INFO","msg":"sender: started","stream_id":"extafuyf"}
+{"time":"2025-03-16T10:51:05.460085933Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T10:52:48.129707126Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T10:52:48.131252746Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T10:52:49.13059924Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.353273508,"progress":"370B/370B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.353263058,"progress":"254B/254B"},{"desc":"uploading config.yaml","runtime_seconds":0.032142819,"progress":"869B/869B"}],"total_operations":3}}
+{"time":"2025-03-16T10:52:49.492089369Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T10:52:49.837871785Z","level":"INFO","msg":"stream: closing","id":"extafuyf"}
+{"time":"2025-03-16T10:52:49.837891221Z","level":"INFO","msg":"handler: closed","stream_id":"extafuyf"}
+{"time":"2025-03-16T10:52:49.837903043Z","level":"INFO","msg":"writer: Close: closed","stream_id":"extafuyf"}
+{"time":"2025-03-16T10:52:49.837968515Z","level":"INFO","msg":"sender: closed","stream_id":"extafuyf"}
+{"time":"2025-03-16T10:52:49.837980497Z","level":"INFO","msg":"stream: closed","id":"extafuyf"}

@@ -21,7 +21,7 @@ for class_idx in range(10):
     sample_labels.append(class_names[class_idx])
 
 # initialize wandb
-wandb.init(project="fashion-mnist-classification",
+wandb.init(project="mnist-fashion-classification",
            entity="tejaswiniksssn-indian-institute-of-technology-madras",
            name="fashion-mnist-samples")
 # log images into wandb
@@ -458,7 +458,7 @@ sweep_config = {
 
 
 # Initialize the sweep
-sweep_id = wandb.sweep(sweep_config, project="fashion-mnist-hyperparam-tuning")
+sweep_id = wandb.sweep(sweep_config, project="mnist-fashion-classification")
 
 
 # Load and preprocess data
@@ -482,7 +482,7 @@ y_test = np.eye(num_classes)[y_test]
 
 def train(config=None):
     run = wandb.init(
-        project="fashion-mnist-sweep",
+        project="mnist-fashion-classification",
         entity="tejaswiniksssn-indian-institute-of-technology-madras",
         config=config
     )
@@ -548,11 +548,11 @@ def train(config=None):
 
 
 # Run the sweep
-wandb.agent(sweep_id, function=train, count=1)
+wandb.agent(sweep_id, function=train, count=30)
 
 
 # Initialize wandb run (modify project name as needed)
-wandb.init(project="fashion_mnist_sweep", name="best_model_evaluation")
+wandb.init(project="mnist-fashion-classification", name="best_model_evaluation")
 
 
 # BEST Neural network configuration.
@@ -609,7 +609,7 @@ wandb.finish()
 
 # Compute Confusion Matrix using NumPy
 # Initialize the W&B run
-wandb.init(project="fashion-mnist-classification", name="confusion_matrix_sweep")
+wandb.init(project="mnist-fashion-classification", name="confusion_matrix_sweep")
 num_classes = 10
 conf_matrix = np.zeros((num_classes, num_classes), dtype=int)
 
@@ -651,7 +651,7 @@ wandb.finish()
 
 import matplotlib.pyplot as plt
 # Initialize W&B
-wandb.init(project="fashion-mnist-classification", name="loss-comparison")
+wandb.init(project="mnist-fashion-classification", name="loss-comparison")
 
 # Load and preprocess data
 (x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
@@ -754,7 +754,7 @@ for config in configs:
     print(f"\n=== Training with {config['name']} ===\n")
 
     # Initialize wandb for logging
-    wandb.init(project="fashion-mnist-classification", name=config["name"], config=config)
+    wandb.init(project="mnist-classification", name=config["name"], config=config)
     
     # Initialize the neural network with weight initialization and decay
     nn = FeedForwardNN(

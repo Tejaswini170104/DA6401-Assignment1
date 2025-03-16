@@ -1,0 +1,16 @@
+{"time":"2025-03-16T10:35:56.378995902Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_103556-tm7j02kl/logs/debug-core.log"}
+{"time":"2025-03-16T10:35:56.483553026Z","level":"INFO","msg":"created new stream","id":"tm7j02kl"}
+{"time":"2025-03-16T10:35:56.483586388Z","level":"INFO","msg":"stream: started","id":"tm7j02kl"}
+{"time":"2025-03-16T10:35:56.483694336Z","level":"INFO","msg":"writer: Do: started","stream_id":"tm7j02kl"}
+{"time":"2025-03-16T10:35:56.483861568Z","level":"INFO","msg":"handler: started","stream_id":"tm7j02kl"}
+{"time":"2025-03-16T10:35:56.483902905Z","level":"INFO","msg":"sender: started","stream_id":"tm7j02kl"}
+{"time":"2025-03-16T10:35:57.036547514Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T10:35:57.816590031Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T10:35:57.817115019Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T10:35:58.784281629Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/fashion-mnist samples_0_adf48a208b1e9f1a3b47.png","runtime_seconds":0.598914529,"progress":"574B/574B"},{"desc":"uploading config.yaml","runtime_seconds":0.308298365,"progress":"582B/582B"}],"total_operations":2}}
+{"time":"2025-03-16T10:35:58.866412365Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T10:35:59.226895315Z","level":"INFO","msg":"stream: closing","id":"tm7j02kl"}
+{"time":"2025-03-16T10:35:59.22691412Z","level":"INFO","msg":"handler: closed","stream_id":"tm7j02kl"}
+{"time":"2025-03-16T10:35:59.22692466Z","level":"INFO","msg":"writer: Close: closed","stream_id":"tm7j02kl"}
+{"time":"2025-03-16T10:35:59.226993859Z","level":"INFO","msg":"sender: closed","stream_id":"tm7j02kl"}
+{"time":"2025-03-16T10:35:59.2270055Z","level":"INFO","msg":"stream: closed","id":"tm7j02kl"}

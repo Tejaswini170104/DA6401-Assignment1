@@ -1,0 +1,13 @@
+Training started with mini-batch training...
+
+Epoch 1/10|cross_entropy Loss: 0.8471
+Epoch 2/10|cross_entropy Loss: 0.4613
+Epoch 3/10|cross_entropy Loss: 0.3908
+Epoch 4/10|cross_entropy Loss: 0.3660
+Epoch 5/10|cross_entropy Loss: 0.3567
+Epoch 6/10|cross_entropy Loss: 0.3500
+Epoch 7/10|cross_entropy Loss: 0.3473
+Epoch 8/10|cross_entropy Loss: 0.3458
+Epoch 9/10|cross_entropy Loss: 0.3441
+Epoch 10/10|cross_entropy Loss: 0.3420
+Test Accuracy: 86.30%
