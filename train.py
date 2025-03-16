@@ -621,6 +621,7 @@ class_labels = [
     "T-shirt/top", "Trouser", "Pullover", "Dress", "Coat",
     "Sandal", "Shirt", "Sneaker", "Bag", "Ankle boot"
 ]
+conf_matrix_df = pd.DataFrame(conf_matrix, index=class_labels, columns=class_labels)
 
 # Create confusion matrix dictionary
 conf_matrix_dict = {
@@ -638,11 +639,11 @@ for i in range(num_classes):
 
 # Log using `wandb.plot.confusion_matrix`
 wandb.log({
+    "confusion_matrix_table": wandb.Table(dataframe=conf_matrix_df),
     "confusion_matrix": wandb.plot.confusion_matrix(
-        probs=None,
         y_true=np.argmax(y_test, axis=1).tolist(),  # Keep as integers
         preds=test_predictions.tolist(),            # Keep as integers
-        class_names=[str(i) for i in class_labels]
+        class_names=class_labels
     )
 })
 
@@ -753,8 +754,6 @@ results = []
 for config in configs:
     print(f"\n=== Training with {config['name']} ===\n")
 
-    # Initialize wandb for logging
-    wandb.init(project="mnist-classification", name=config["name"], config=config)
     
     # Initialize the neural network with weight initialization and decay
     nn = FeedForwardNN(
@@ -789,38 +788,8 @@ for config in configs:
     test_predictions = np.argmax(Y_pred_test, axis=1)
     test_accuracy = compute_accuracy(np.argmax(y_test, axis=1), test_predictions)
 
-    # Log accuracy
-    wandb.log({"test_accuracy": test_accuracy})
-    print(f"Test Accuracy for {config['name']}: {test_accuracy:.2%}")
-
-    # Confusion Matrix
-    conf_matrix = np.zeros((num_classes, num_classes), dtype=int)
-    for true, pred in zip(np.argmax(y_test, axis=1), test_predictions):
-        conf_matrix[true][pred] += 1
-
-    class_labels = [
-        "0", "1", "2", "3", "4",
-        "5", "6", "7", "8", "9"
-    ]
-
-    # Log confusion matrix
-    wandb.log({
-        "confusion_matrix": wandb.plot.confusion_matrix(
-            probs=None,
-            y_true=np.argmax(y_test, axis=1).tolist(),  # Keep as integers
-            preds=test_predictions.tolist(),            # Keep as integers
-            class_names=[str(i) for i in class_labels]  # For display only
-        )
-    })
-
-    # Save results
-    results.append({
-        "name": config["name"],
-        "test_accuracy": test_accuracy
-    })
-
-    # Finish run
-    wandb.finish()
+    # test accuracy
+    print(f"Test Accuracy for {config['name']}: {test_accuracy:.2%}")   
 
 # Report results
 print("\n=== Final Results ===")
