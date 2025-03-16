@@ -1,0 +1,16 @@
+{"time":"2025-03-16T17:50:55.584407216Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_175055-hoco4hfb/logs/debug-core.log"}
+{"time":"2025-03-16T17:50:55.688239409Z","level":"INFO","msg":"created new stream","id":"hoco4hfb"}
+{"time":"2025-03-16T17:50:55.688276739Z","level":"INFO","msg":"stream: started","id":"hoco4hfb"}
+{"time":"2025-03-16T17:50:55.688381458Z","level":"INFO","msg":"writer: Do: started","stream_id":"hoco4hfb"}
+{"time":"2025-03-16T17:50:55.688535315Z","level":"INFO","msg":"handler: started","stream_id":"hoco4hfb"}
+{"time":"2025-03-16T17:50:55.688577013Z","level":"INFO","msg":"sender: started","stream_id":"hoco4hfb"}
+{"time":"2025-03-16T17:50:56.051616973Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T17:51:11.783506863Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T17:51:11.784136348Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T17:51:12.787194252Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.358097112,"progress":"867B/867B"}],"total_operations":1}}
+{"time":"2025-03-16T17:51:12.82177813Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T17:51:13.148600392Z","level":"INFO","msg":"stream: closing","id":"hoco4hfb"}
+{"time":"2025-03-16T17:51:13.148619348Z","level":"INFO","msg":"handler: closed","stream_id":"hoco4hfb"}
+{"time":"2025-03-16T17:51:13.148629046Z","level":"INFO","msg":"writer: Close: closed","stream_id":"hoco4hfb"}
+{"time":"2025-03-16T17:51:13.148726748Z","level":"INFO","msg":"sender: closed","stream_id":"hoco4hfb"}
+{"time":"2025-03-16T17:51:13.148736496Z","level":"INFO","msg":"stream: closed","id":"hoco4hfb"}

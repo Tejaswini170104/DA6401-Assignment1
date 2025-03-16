@@ -1,0 +1,16 @@
+{"time":"2025-03-16T15:28:09.274886356Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_152809-aaf1fm68/logs/debug-core.log"}
+{"time":"2025-03-16T15:28:09.378040995Z","level":"INFO","msg":"created new stream","id":"aaf1fm68"}
+{"time":"2025-03-16T15:28:09.378069999Z","level":"INFO","msg":"stream: started","id":"aaf1fm68"}
+{"time":"2025-03-16T15:28:09.378131253Z","level":"INFO","msg":"handler: started","stream_id":"aaf1fm68"}
+{"time":"2025-03-16T15:28:09.37815644Z","level":"INFO","msg":"writer: Do: started","stream_id":"aaf1fm68"}
+{"time":"2025-03-16T15:28:09.378283838Z","level":"INFO","msg":"sender: started","stream_id":"aaf1fm68"}
+{"time":"2025-03-16T15:28:09.69243837Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T15:28:41.641164333Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T15:28:41.641638482Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T15:28:42.642252059Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/loss_comparison_0_83737a9c7c71184730cc.png","runtime_seconds":0.664737161,"progress":"39.7KB/39.7KB"},{"desc":"uploading output.log","runtime_seconds":0.340961948,"progress":"762B/762B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.340948121,"progress":"331B/331B"},{"desc":"uploading config.yaml","runtime_seconds":0.020322141,"progress":"866B/866B"}],"total_operations":4}}
+{"time":"2025-03-16T15:28:43.1204816Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T15:28:43.46004019Z","level":"INFO","msg":"stream: closing","id":"aaf1fm68"}
+{"time":"2025-03-16T15:28:43.460075667Z","level":"INFO","msg":"handler: closed","stream_id":"aaf1fm68"}
+{"time":"2025-03-16T15:28:43.460097357Z","level":"INFO","msg":"writer: Close: closed","stream_id":"aaf1fm68"}
+{"time":"2025-03-16T15:28:43.460185432Z","level":"INFO","msg":"sender: closed","stream_id":"aaf1fm68"}
+{"time":"2025-03-16T15:28:43.46020572Z","level":"INFO","msg":"stream: closed","id":"aaf1fm68"}

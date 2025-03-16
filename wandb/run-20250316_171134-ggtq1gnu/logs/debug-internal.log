@@ -1,0 +1,16 @@
+{"time":"2025-03-16T17:11:34.500335771Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_171134-ggtq1gnu/logs/debug-core.log"}
+{"time":"2025-03-16T17:11:34.605118001Z","level":"INFO","msg":"created new stream","id":"ggtq1gnu"}
+{"time":"2025-03-16T17:11:34.605151113Z","level":"INFO","msg":"stream: started","id":"ggtq1gnu"}
+{"time":"2025-03-16T17:11:34.605257188Z","level":"INFO","msg":"writer: Do: started","stream_id":"ggtq1gnu"}
+{"time":"2025-03-16T17:11:34.605543533Z","level":"INFO","msg":"handler: started","stream_id":"ggtq1gnu"}
+{"time":"2025-03-16T17:11:34.605715574Z","level":"INFO","msg":"sender: started","stream_id":"ggtq1gnu"}
+{"time":"2025-03-16T17:11:34.946880433Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T17:11:56.12858398Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T17:11:56.129227051Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T17:11:57.131585279Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.343380667,"progress":"865B/865B"}],"total_operations":1}}
+{"time":"2025-03-16T17:11:57.185498801Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T17:11:57.517020718Z","level":"INFO","msg":"stream: closing","id":"ggtq1gnu"}
+{"time":"2025-03-16T17:11:57.517040224Z","level":"INFO","msg":"handler: closed","stream_id":"ggtq1gnu"}
+{"time":"2025-03-16T17:11:57.517050784Z","level":"INFO","msg":"writer: Close: closed","stream_id":"ggtq1gnu"}
+{"time":"2025-03-16T17:11:57.517116086Z","level":"INFO","msg":"sender: closed","stream_id":"ggtq1gnu"}
+{"time":"2025-03-16T17:11:57.517126625Z","level":"INFO","msg":"stream: closed","id":"ggtq1gnu"}

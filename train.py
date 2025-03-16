@@ -21,7 +21,7 @@ for class_idx in range(10):
     sample_labels.append(class_names[class_idx])
 
 # initialize wandb
-wandb.init(project="mnist-fashion-classification",
+wandb.init(project="classification",
            entity="tejaswiniksssn-indian-institute-of-technology-madras",
            name="fashion-mnist-samples")
 # log images into wandb
@@ -411,7 +411,7 @@ if __name__ == '__main__':
     num_hidden_layers = 2
     hidden_layer_dim = 128
     learning_rate = 0.01
-    epochs = 20  # You may increase epochs for better performance.
+    epochs = 10  # You may increase epochs for better performance.
     batch_size = 128  # Mini-batch size.
     weight_init = "random"
     weight_decay = 0.0
@@ -458,7 +458,7 @@ sweep_config = {
 
 
 # Initialize the sweep
-sweep_id = wandb.sweep(sweep_config, project="mnist-fashion-classification")
+sweep_id = wandb.sweep(sweep_config, project="classification")
 
 
 # Load and preprocess data
@@ -482,7 +482,7 @@ y_test = np.eye(num_classes)[y_test]
 
 def train(config=None):
     run = wandb.init(
-        project="mnist-fashion-classification",
+        project="classification",
         entity="tejaswiniksssn-indian-institute-of-technology-madras",
         config=config
     )
@@ -601,10 +601,16 @@ test_predictions = np.argmax(Y_pred_test, axis=1)
 test_accuracy = compute_accuracy(y_test, test_predictions)
 print(f"Test Accuracy: {test_accuracy:.2%}")
 
-
+wandb.finish()
 # Compute Confusion Matrix using NumPy
 # Initialize the W&B run
-wandb.init(project="mnist-fashion-classification", name="confusion_matrix_sweep")
+# Ensure y_test and test_predictions are in the correct format
+if len(y_test.shape) > 1:
+    y_test = np.argmax(y_test, axis=1)  # Convert one-hot encoding to labels
+if len(test_predictions.shape) > 1:
+    test_predictions = np.argmax(test_predictions, axis=1)
+
+wandb.init(project="classification", name="confusion_matrix_sweep")
 num_classes = 10
 conf_matrix = np.zeros((num_classes, num_classes), dtype=int)
 
@@ -618,7 +624,7 @@ class_labels = [
     "Sandal", "Shirt", "Sneaker", "Bag", "Ankle boot"
 ]
 
-conf_matrix_df = pd.DataFrame(conf_matrix, index=class_labels, columns=class_labels)
+conf_matrix_df = pd.DataFrame(conf_matrix.astype(int), index=class_labels, columns=class_labels)
 
 # Create confusion matrix dictionary
 conf_matrix_dict = {
@@ -636,8 +642,8 @@ for i in range(num_classes):
 
 # Create the confusion matrix plot
 cm = wandb.plot.confusion_matrix(
-    y_true=y_test,
-    preds=test_predictions,
+    y_true=y_test.tolist(),
+    preds=test_predictions.tolist(),
     class_names=class_labels
 )
 
@@ -649,7 +655,7 @@ wandb.log({
 # Finish wandb run
 wandb.finish()
 
-import matplotlib.pyplot as plt
+wandb.init(project="classification", name="loss-comparison")
 
 # Load and preprocess data
 (x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
@@ -663,30 +669,28 @@ nn_cross_entropy = FeedForwardNN(input_dim=28*28, output_dim=10,
 
 # Select optimizer (options: "sgd", "momentum", "nesterov", "rmsprop", "adam", "nadam")
 optimizer_type = "adam"
-optimizer = Optimizer(parameters=nn_cross_entropy.W, optimizer_type=optimizer_type, lr=0.001)
+optimizer = Optimizer(parameters=nn_cross_entropy.W, optimizer_type=optimizer_type, lr=0.005)
 
-cross_entropy_loss = nn_cross_entropy.train(x_train, y_train, epochs=10,optimizer=optimizer, loss_type="cross_entropy")
+cross_entropy_loss = nn_cross_entropy.train(x_train, y_train, epochs=10, optimizer=optimizer, loss_type="cross_entropy")
 
 # Train using squared error loss
 nn_squared_error = FeedForwardNN(input_dim=28*28, output_dim=10,
                                  num_hidden_layers=2, hidden_layer_dim=128,
                                  lr=0.001)
-# Select optimizer (options: "sgd", "momentum", "nesterov", "rmsprop", "adam", "nadam")
-optimizer_type = "adam"
-optimizer = Optimizer(parameters=nn_squared_error.W, optimizer_type=optimizer_type, lr=0.001)
+
+optimizer = Optimizer(parameters=nn_squared_error.W, optimizer_type=optimizer_type, lr=0.005)
 
 squared_error_loss = nn_squared_error.train(x_train, y_train, epochs=10, loss_type="squared_error")
 
-# Plot loss curves
-plt.figure(figsize=(10, 6))
-plt.plot(cross_entropy_loss, label='Cross Entropy Loss', marker='o')
-plt.plot(squared_error_loss, label='Squared Error Loss', marker='o')
-plt.title('Loss Comparison: Cross Entropy vs Squared Error')
-plt.xlabel('Epoch')
-plt.ylabel('Loss')
-plt.legend()
-plt.grid()
-plt.show()
+# ✅ Directly log loss curves to W&B as a line plot
+for epoch in range(10):
+    wandb.log({
+        "Cross Entropy Loss": cross_entropy_loss[epoch],
+        "Squared Error Loss": squared_error_loss[epoch],
+        "epoch": epoch + 1
+    })
+
+wandb.finish()
 
 
 from keras.datasets import mnist # type: ignore
@@ -694,6 +698,7 @@ from keras.datasets import mnist # type: ignore
 # Load MNIST dataset
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
+wandb.init(project="classification",name="mnist performance")
 # Preprocessing
 x_train = x_train.reshape(-1, 28 * 28).astype('float32') / 255.0
 x_test = x_test.reshape(-1, 28 * 28).astype('float32') / 255.0
@@ -768,26 +773,44 @@ for config in configs:
     )
 
     # Train the network
-    loss_history = nn.train(
-        x_train, y_train,
-        epochs=config["epochs"],
-        batch_size=config["batch_size"],
-        optimizer=optimizer
-    )
+    loss_history = []
+    for epoch in range(config["epochs"]):
+        loss = nn.train(
+            x_train, y_train,
+            epochs=1,  # Train one epoch at a time for logging
+            batch_size=config["batch_size"],
+            optimizer=optimizer
+        )
+        
+        loss_history.append(loss)
+
+        # Log loss and epoch on W&B
+        wandb.log({
+            f"{config['name']}_train_loss": loss,
+            "epoch": epoch + 1
+        })
 
     # Evaluate on test set
     Y_pred_test = nn.forward(x_test)
     test_predictions = np.argmax(Y_pred_test, axis=1)
     test_accuracy = compute_accuracy(np.argmax(y_test, axis=1), test_predictions)
 
-    # test accuracy
-    print(f"Test Accuracy for {config['name']}: {test_accuracy:.2%}")   
+    # Test accuracy
+    print(f"Test Accuracy for {config['name']}: {test_accuracy:.2%}")
 
-# Store results
-result = {
-    "name": config["name"],
-    "test_accuracy": test_accuracy
-}
+    # Log test accuracy to W&B
+    wandb.log({f"{config['name']}_test_accuracy": test_accuracy})
+
+    # Save results
+    results.append({
+        "name": config["name"],
+        "test_accuracy": test_accuracy
+    })
+
 # Report results
 print("\n=== Final Results ===")
-print(f"{result['name']}: {result['test_accuracy']:.2%}")
+for result in results:
+    print(f"{result['name']}: {result['test_accuracy']:.2%}")
+
+# Finish W&B run
+wandb.finish()

@@ -1,0 +1,16 @@
+{"time":"2025-03-16T17:15:55.052617886Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_171555-fu52rfsx/logs/debug-core.log"}
+{"time":"2025-03-16T17:15:55.156150162Z","level":"INFO","msg":"created new stream","id":"fu52rfsx"}
+{"time":"2025-03-16T17:15:55.156182853Z","level":"INFO","msg":"stream: started","id":"fu52rfsx"}
+{"time":"2025-03-16T17:15:55.157468771Z","level":"INFO","msg":"sender: started","stream_id":"fu52rfsx"}
+{"time":"2025-03-16T17:15:55.157522654Z","level":"INFO","msg":"handler: started","stream_id":"fu52rfsx"}
+{"time":"2025-03-16T17:15:55.157539346Z","level":"INFO","msg":"writer: Do: started","stream_id":"fu52rfsx"}
+{"time":"2025-03-16T17:15:55.530869715Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T17:16:50.731533943Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T17:16:50.732281308Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T17:16:51.733949447Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.660421036,"progress":"370B/370B"},{"desc":"uploading config.yaml","runtime_seconds":0.345632594,"progress":"866B/866B"}],"total_operations":2}}
+{"time":"2025-03-16T17:16:52.551272554Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T17:16:52.915748498Z","level":"INFO","msg":"stream: closing","id":"fu52rfsx"}
+{"time":"2025-03-16T17:16:52.915891596Z","level":"INFO","msg":"handler: closed","stream_id":"fu52rfsx"}
+{"time":"2025-03-16T17:16:52.915906884Z","level":"INFO","msg":"writer: Close: closed","stream_id":"fu52rfsx"}
+{"time":"2025-03-16T17:16:52.915975209Z","level":"INFO","msg":"sender: closed","stream_id":"fu52rfsx"}
+{"time":"2025-03-16T17:16:52.916090948Z","level":"INFO","msg":"stream: closed","id":"fu52rfsx"}

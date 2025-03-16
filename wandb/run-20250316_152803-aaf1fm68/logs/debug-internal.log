@@ -1,0 +1,16 @@
+{"time":"2025-03-16T15:28:03.980834454Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_152803-aaf1fm68/logs/debug-core.log"}
+{"time":"2025-03-16T15:28:04.086356839Z","level":"INFO","msg":"created new stream","id":"aaf1fm68"}
+{"time":"2025-03-16T15:28:04.086404117Z","level":"INFO","msg":"stream: started","id":"aaf1fm68"}
+{"time":"2025-03-16T15:28:04.086476823Z","level":"INFO","msg":"handler: started","stream_id":"aaf1fm68"}
+{"time":"2025-03-16T15:28:04.086500998Z","level":"INFO","msg":"writer: Do: started","stream_id":"aaf1fm68"}
+{"time":"2025-03-16T15:28:04.086636194Z","level":"INFO","msg":"sender: started","stream_id":"aaf1fm68"}
+{"time":"2025-03-16T15:28:04.431107697Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T15:28:04.97187067Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T15:28:04.972383962Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T15:28:05.936847407Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-aaf1fm68-confusion_matrix_table","runtime_seconds":0.636086493},{"desc":"uploading media/table/confusion_matrix_table_0_8f52a45a2459447f3c14.table.json","runtime_seconds":0.287674965,"progress":"2.9KB/2.9KB"},{"desc":"uploading output.log","runtime_seconds":0.287665437},{"desc":"uploading wandb-summary.json","runtime_seconds":0.287661069,"progress":"754B/754B"}],"total_operations":4}}
+{"time":"2025-03-16T15:28:08.906012117Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T15:28:09.234491253Z","level":"INFO","msg":"stream: closing","id":"aaf1fm68"}
+{"time":"2025-03-16T15:28:09.234510909Z","level":"INFO","msg":"handler: closed","stream_id":"aaf1fm68"}
+{"time":"2025-03-16T15:28:09.234532159Z","level":"INFO","msg":"writer: Close: closed","stream_id":"aaf1fm68"}
+{"time":"2025-03-16T15:28:09.234592431Z","level":"INFO","msg":"sender: closed","stream_id":"aaf1fm68"}
+{"time":"2025-03-16T15:28:09.234605215Z","level":"INFO","msg":"stream: closed","id":"aaf1fm68"}

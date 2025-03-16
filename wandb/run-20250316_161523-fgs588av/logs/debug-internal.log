@@ -1,0 +1,16 @@
+{"time":"2025-03-16T16:15:23.582289899Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_161523-fgs588av/logs/debug-core.log"}
+{"time":"2025-03-16T16:15:23.685825886Z","level":"INFO","msg":"created new stream","id":"fgs588av"}
+{"time":"2025-03-16T16:15:23.685860441Z","level":"INFO","msg":"stream: started","id":"fgs588av"}
+{"time":"2025-03-16T16:15:23.685913513Z","level":"INFO","msg":"writer: Do: started","stream_id":"fgs588av"}
+{"time":"2025-03-16T16:15:23.686019741Z","level":"INFO","msg":"handler: started","stream_id":"fgs588av"}
+{"time":"2025-03-16T16:15:23.686045359Z","level":"INFO","msg":"sender: started","stream_id":"fgs588av"}
+{"time":"2025-03-16T16:15:24.072489895Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T16:15:24.846014762Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T16:15:24.846577342Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T16:15:25.813731007Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.287995112,"progress":"582B/582B"}],"total_operations":1}}
+{"time":"2025-03-16T16:15:25.921426763Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T16:15:26.399752367Z","level":"INFO","msg":"stream: closing","id":"fgs588av"}
+{"time":"2025-03-16T16:15:26.399778565Z","level":"INFO","msg":"handler: closed","stream_id":"fgs588av"}
+{"time":"2025-03-16T16:15:26.399790197Z","level":"INFO","msg":"writer: Close: closed","stream_id":"fgs588av"}
+{"time":"2025-03-16T16:15:26.399884734Z","level":"INFO","msg":"sender: closed","stream_id":"fgs588av"}
+{"time":"2025-03-16T16:15:26.399903298Z","level":"INFO","msg":"stream: closed","id":"fgs588av"}

@@ -1,0 +1,16 @@
+{"time":"2025-03-16T17:53:46.528479917Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_175346-d4p2is4r/logs/debug-core.log"}
+{"time":"2025-03-16T17:53:46.634750549Z","level":"INFO","msg":"created new stream","id":"d4p2is4r"}
+{"time":"2025-03-16T17:53:46.634808167Z","level":"INFO","msg":"stream: started","id":"d4p2is4r"}
+{"time":"2025-03-16T17:53:46.634894268Z","level":"INFO","msg":"handler: started","stream_id":"d4p2is4r"}
+{"time":"2025-03-16T17:53:46.634931497Z","level":"INFO","msg":"writer: Do: started","stream_id":"d4p2is4r"}
+{"time":"2025-03-16T17:53:46.635045891Z","level":"INFO","msg":"sender: started","stream_id":"d4p2is4r"}
+{"time":"2025-03-16T17:53:46.994795588Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T17:53:47.567801014Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T17:53:47.568595928Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T17:53:48.568842854Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-d4p2is4r-confusion_matrix_table","runtime_seconds":0.806624796},{"desc":"uploading config.yaml","runtime_seconds":0.170944123,"progress":"2.2KB/2.2KB"}],"total_operations":2}}
+{"time":"2025-03-16T17:53:50.538894498Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T17:53:50.90846452Z","level":"INFO","msg":"stream: closing","id":"d4p2is4r"}
+{"time":"2025-03-16T17:53:50.908694609Z","level":"INFO","msg":"handler: closed","stream_id":"d4p2is4r"}
+{"time":"2025-03-16T17:53:50.908737178Z","level":"INFO","msg":"writer: Close: closed","stream_id":"d4p2is4r"}
+{"time":"2025-03-16T17:53:50.908838498Z","level":"INFO","msg":"sender: closed","stream_id":"d4p2is4r"}
+{"time":"2025-03-16T17:53:50.909180456Z","level":"INFO","msg":"stream: closed","id":"d4p2is4r"}

@@ -1,0 +1,16 @@
+{"time":"2025-03-16T16:17:00.168305313Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_161700-lsoz3w5a/logs/debug-core.log"}
+{"time":"2025-03-16T16:17:00.27396968Z","level":"INFO","msg":"created new stream","id":"lsoz3w5a"}
+{"time":"2025-03-16T16:17:00.274017669Z","level":"INFO","msg":"stream: started","id":"lsoz3w5a"}
+{"time":"2025-03-16T16:17:00.274027695Z","level":"INFO","msg":"writer: Do: started","stream_id":"lsoz3w5a"}
+{"time":"2025-03-16T16:17:00.274064383Z","level":"INFO","msg":"handler: started","stream_id":"lsoz3w5a"}
+{"time":"2025-03-16T16:17:00.274081064Z","level":"INFO","msg":"sender: started","stream_id":"lsoz3w5a"}
+{"time":"2025-03-16T16:17:00.631780083Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T16:17:01.121382393Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T16:17:01.12197494Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T16:17:02.122325673Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading requirements.txt","runtime_seconds":1.029586936,"progress":"2.8KB/2.8KB"},{"desc":"uploading artifact run-lsoz3w5a-confusion_matrix_table","runtime_seconds":0.639634528},{"desc":"uploading media/table/confusion_matrix_table_0_33b7bf34962d4c301534.table.json","runtime_seconds":0.28426577,"progress":"2.9KB/2.9KB"},{"desc":"uploading output.log","runtime_seconds":0.284251724},{"desc":"uploading wandb-summary.json","runtime_seconds":0.284247155,"progress":"753B/753B"}],"total_operations":5}}
+{"time":"2025-03-16T16:17:04.579997737Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T16:17:04.91742434Z","level":"INFO","msg":"stream: closing","id":"lsoz3w5a"}
+{"time":"2025-03-16T16:17:04.91747755Z","level":"INFO","msg":"handler: closed","stream_id":"lsoz3w5a"}
+{"time":"2025-03-16T16:17:04.91750471Z","level":"INFO","msg":"writer: Close: closed","stream_id":"lsoz3w5a"}
+{"time":"2025-03-16T16:17:04.917698412Z","level":"INFO","msg":"sender: closed","stream_id":"lsoz3w5a"}
+{"time":"2025-03-16T16:17:04.91776175Z","level":"INFO","msg":"stream: closed","id":"lsoz3w5a"}

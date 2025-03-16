@@ -1,0 +1,16 @@
+{"time":"2025-03-16T18:01:23.384841593Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_180123-3gf7ovei/logs/debug-core.log"}
+{"time":"2025-03-16T18:01:23.489208822Z","level":"INFO","msg":"created new stream","id":"3gf7ovei"}
+{"time":"2025-03-16T18:01:23.489236593Z","level":"INFO","msg":"stream: started","id":"3gf7ovei"}
+{"time":"2025-03-16T18:01:23.489301565Z","level":"INFO","msg":"handler: started","stream_id":"3gf7ovei"}
+{"time":"2025-03-16T18:01:23.489328515Z","level":"INFO","msg":"writer: Do: started","stream_id":"3gf7ovei"}
+{"time":"2025-03-16T18:01:23.48947566Z","level":"INFO","msg":"sender: started","stream_id":"3gf7ovei"}
+{"time":"2025-03-16T18:01:23.972875209Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T18:01:24.57782777Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T18:01:24.578514008Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T18:01:25.539684108Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-3gf7ovei-confusion_matrix_table","runtime_seconds":0.687533705},{"desc":"uploading media/table/confusion_matrix_table_0_5d8ac4c0b5f16aeee7a0.table.json","runtime_seconds":0.348566598,"progress":"2.9KB/2.9KB"},{"desc":"uploading output.log","runtime_seconds":0.348555708},{"desc":"uploading wandb-summary.json","runtime_seconds":0.348552933,"progress":"753B/753B"},{"desc":"uploading config.yaml","runtime_seconds":0.048673449,"progress":"2.2KB/2.2KB"}],"total_operations":5}}
+{"time":"2025-03-16T18:01:27.660580874Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T18:01:28.021366101Z","level":"INFO","msg":"stream: closing","id":"3gf7ovei"}
+{"time":"2025-03-16T18:01:28.021401307Z","level":"INFO","msg":"handler: closed","stream_id":"3gf7ovei"}
+{"time":"2025-03-16T18:01:28.021435564Z","level":"INFO","msg":"sender: closed","stream_id":"3gf7ovei"}
+{"time":"2025-03-16T18:01:28.021426795Z","level":"INFO","msg":"writer: Close: closed","stream_id":"3gf7ovei"}
+{"time":"2025-03-16T18:01:28.021500866Z","level":"INFO","msg":"stream: closed","id":"3gf7ovei"}

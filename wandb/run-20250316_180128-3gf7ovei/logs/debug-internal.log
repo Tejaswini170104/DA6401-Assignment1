@@ -1,0 +1,16 @@
+{"time":"2025-03-16T18:01:28.061892767Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_180128-3gf7ovei/logs/debug-core.log"}
+{"time":"2025-03-16T18:01:28.165096878Z","level":"INFO","msg":"created new stream","id":"3gf7ovei"}
+{"time":"2025-03-16T18:01:28.165133226Z","level":"INFO","msg":"stream: started","id":"3gf7ovei"}
+{"time":"2025-03-16T18:01:28.165197887Z","level":"INFO","msg":"handler: started","stream_id":"3gf7ovei"}
+{"time":"2025-03-16T18:01:28.165222442Z","level":"INFO","msg":"writer: Do: started","stream_id":"3gf7ovei"}
+{"time":"2025-03-16T18:01:28.165291712Z","level":"INFO","msg":"sender: started","stream_id":"3gf7ovei"}
+{"time":"2025-03-16T18:01:28.501551971Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T18:02:00.079577382Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T18:02:00.080624056Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T18:02:01.081419891Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.321609009,"progress":"762B/762B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.321600072,"progress":"184B/184B"},{"desc":"uploading config.yaml","runtime_seconds":0.022480611,"progress":"870B/870B"}],"total_operations":3}}
+{"time":"2025-03-16T18:02:01.560636651Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T18:02:01.919071771Z","level":"INFO","msg":"stream: closing","id":"3gf7ovei"}
+{"time":"2025-03-16T18:02:01.919099513Z","level":"INFO","msg":"handler: closed","stream_id":"3gf7ovei"}
+{"time":"2025-03-16T18:02:01.919161449Z","level":"INFO","msg":"sender: closed","stream_id":"3gf7ovei"}
+{"time":"2025-03-16T18:02:01.919113659Z","level":"INFO","msg":"writer: Close: closed","stream_id":"3gf7ovei"}
+{"time":"2025-03-16T18:02:01.919294867Z","level":"INFO","msg":"stream: closed","id":"3gf7ovei"}

@@ -1,0 +1,16 @@
+{"time":"2025-03-16T15:19:58.111958127Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250316_151958-yvnyii1y/logs/debug-core.log"}
+{"time":"2025-03-16T15:19:58.216682352Z","level":"INFO","msg":"created new stream","id":"yvnyii1y"}
+{"time":"2025-03-16T15:19:58.216718279Z","level":"INFO","msg":"stream: started","id":"yvnyii1y"}
+{"time":"2025-03-16T15:19:58.216781848Z","level":"INFO","msg":"writer: Do: started","stream_id":"yvnyii1y"}
+{"time":"2025-03-16T15:19:58.216897304Z","level":"INFO","msg":"sender: started","stream_id":"yvnyii1y"}
+{"time":"2025-03-16T15:19:58.217105783Z","level":"INFO","msg":"handler: started","stream_id":"yvnyii1y"}
+{"time":"2025-03-16T15:19:58.549286099Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T15:19:59.155053207Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T15:19:59.155663115Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T15:20:00.1176979Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-yvnyii1y-confusion_matrix_table","runtime_seconds":0.707747775},{"desc":"uploading media/table/confusion_matrix_table_0_eeee5781ea9f68bd3631.table.json","runtime_seconds":0.368084288,"progress":"2.9KB/2.9KB"},{"desc":"uploading output.log","runtime_seconds":0.368071814},{"desc":"uploading wandb-summary.json","runtime_seconds":0.368064922,"progress":"754B/754B"},{"desc":"uploading config.yaml","runtime_seconds":0.066462134,"progress":"2.2KB/2.2KB"}],"total_operations":5}}
+{"time":"2025-03-16T15:20:02.263119423Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T15:20:02.582838303Z","level":"INFO","msg":"stream: closing","id":"yvnyii1y"}
+{"time":"2025-03-16T15:20:02.582862088Z","level":"INFO","msg":"handler: closed","stream_id":"yvnyii1y"}
+{"time":"2025-03-16T15:20:02.582874902Z","level":"INFO","msg":"writer: Close: closed","stream_id":"yvnyii1y"}
+{"time":"2025-03-16T15:20:02.582944672Z","level":"INFO","msg":"sender: closed","stream_id":"yvnyii1y"}
+{"time":"2025-03-16T15:20:02.582957316Z","level":"INFO","msg":"stream: closed","id":"yvnyii1y"}
