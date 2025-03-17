@@ -21,7 +21,7 @@ for class_idx in range(10):
     sample_labels.append(class_names[class_idx])
 
 # initialize wandb
-wandb.init(project="fashion-mnist-classification-v3",
+wandb.init(project="fashion-mnist-classification-v6",
            entity="tejaswiniksssn-indian-institute-of-technology-madras",
            name="fashion-mnist-samples")
 # log images into wandb
@@ -101,7 +101,7 @@ def compute_accuracy(y_true, y_pred):
 # ---------------------------
 class FeedForwardNN:
     def __init__(self, input_dim, output_dim, num_hidden_layers, hidden_layer_dim, lr=0.0001,
-                 act_hidden="tanh", act_output="softmax", weight_init="xavier", weight_decay = 0.0):
+                 act_hidden="relu", act_output="softmax", weight_init="xavier", weight_decay = 0.0):
         """
         Initializes the feed-forward neural network.
         Bias is incorporated by appending a column of ones to the input of each layer.
@@ -242,8 +242,7 @@ class FeedForwardNN:
 
 
         return grads
-
-
+    
     def update_params(self, grads):
         """
         Updates weights using simple SGD.
@@ -302,7 +301,6 @@ class FeedForwardNN:
                     optimizer.step(grads)
                 else:
                     self.update_params(grads)
-
 
             loss_history.append(epoch_loss)
             if (epoch + 1) % print_every == 0:
@@ -458,7 +456,7 @@ sweep_config = {
 
 
 # Initialize the sweep
-sweep_id = wandb.sweep(sweep_config, project="fashion-mnist-classification-v3")
+sweep_id = wandb.sweep(sweep_config, project="fashion-mnist-classification-v6")
 
 
 # Load and preprocess data
@@ -483,7 +481,7 @@ y_test = np.eye(num_classes)[y_test]
 
 def train(config=None):
     run = wandb.init(
-        project="fashion-mnist-classification-v3",
+        project="fashion-mnist-classification-v6",
         entity="tejaswiniksssn-indian-institute-of-technology-madras",
         config=config
     )
@@ -555,8 +553,8 @@ wandb.finish()
 # BEST Neural network configuration.
 input_dim = 28 * 28  # 784 features.
 output_dim = 10 # 10 classes.
-num_hidden_layers = 3
-hidden_layer_dim = 64
+num_hidden_layers = 5
+hidden_layer_dim = 128
 learning_rate = 0.0001
 epochs = 20  # You may increase epochs for better performance.
 batch_size = 16  # Mini-batch size.
@@ -566,7 +564,7 @@ weight_decay = 0
 
 # Initialize the neural network.
 nn = FeedForwardNN(input_dim, output_dim, num_hidden_layers, hidden_layer_dim,
-                       lr=learning_rate, act_hidden="tanh", act_output="softmax", weight_init = "xavier", weight_decay = 0.0)
+                       lr=learning_rate, act_hidden="relu", act_output="softmax", weight_init = "xavier", weight_decay = 0.0)
 
 
 # Select optimizer (options: "sgd", "momentum", "nesterov", "rmsprop", "adam", "nadam").
@@ -613,7 +611,7 @@ if wandb.run is not None:
 import seaborn as sns
 import matplotlib.pyplot as plt
 # Initialize a new W&B run
-wandb.init(project="fashion-mnist-classification-v3", name="confusion_matrix_heatmap_artifact")
+wandb.init(project="fashion-mnist-classification-v6", name="confusion_matrix_heatmap_artifact")
 
 num_classes = 10
 conf_matrix = np.zeros((num_classes, num_classes), dtype=int)
@@ -657,7 +655,7 @@ wandb.log_artifact(artifact)
 # Finish the W&B run
 wandb.finish()
 
-wandb.init(project="fashion-mnist-classification-v3", name="loss-comparison")
+wandb.init(project="fashion-mnist-classification-v6", name="loss-comparison")
 
 # Load and preprocess data
 (x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
@@ -700,7 +698,7 @@ from keras.datasets import mnist # type: ignore
 # Load MNIST dataset
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
-wandb.init(project="fashion-mnist-classification-v3",name="mnist performance")
+wandb.init(project="fashion-mnist-classification-v6",name="mnist performance")
 # Preprocessing
 x_train = x_train.reshape(-1, 28 * 28).astype('float32') / 255.0
 x_test = x_test.reshape(-1, 28 * 28).astype('float32') / 255.0
@@ -713,10 +711,10 @@ configs = [
     {
         "name": "config_1",
         "learning_rate": 0.0001,
-        "num_hidden_layers": 3,
-        "hidden_layer_size": 64,
+        "num_hidden_layers": 5,
+        "hidden_layer_size": 128,
         "optimizer": "adam",
-        "activation": "tanh",
+        "activation": "relu",
         "batch_size": 16,
         "epochs": 10,
         "weight_init": "xavier",        # Options: 'random', 'xavier'
@@ -731,7 +729,7 @@ configs = [
         "activation": "sigmoid",
         "batch_size": 32,
         "epochs": 10,
-        "weight_init": "xavier",
+        "weight_init": "random",
         "weight_decay": 1e-5
     },
     {
@@ -741,9 +739,9 @@ configs = [
         "hidden_layer_size": 128,
         "optimizer": "nadam",
         "activation": "relu",
-        "batch_size": 64,
+        "batch_size": 16,
         "epochs": 10,
-        "weight_init": "random",
+        "weight_init": "xavier",
         "weight_decay": 0.0005
     }
 ]
@@ -785,10 +783,11 @@ for config in configs:
         )
         
         loss_history.append(loss)
-
+       
+        run_name = config["name"]
         # Log loss and epoch on W&B
         wandb.log({
-            f"{config.name}_train_loss": loss,
+            f"{run_name}_train_loss": loss,
             "epoch": epoch + 1
         })
 
@@ -802,7 +801,8 @@ for config in configs:
 
     # Log test accuracy to W&B
     wandb.log({f"{config['name']}_test_accuracy": test_accuracy})
-
+    
+    
     # Save results
     results.append({
         "name": config["name"],

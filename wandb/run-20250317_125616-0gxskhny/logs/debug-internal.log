@@ -1,0 +1,16 @@
+{"time":"2025-03-17T12:56:16.626849054Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250317_125616-0gxskhny/logs/debug-core.log"}
+{"time":"2025-03-17T12:56:16.730927718Z","level":"INFO","msg":"created new stream","id":"0gxskhny"}
+{"time":"2025-03-17T12:56:16.730959067Z","level":"INFO","msg":"stream: started","id":"0gxskhny"}
+{"time":"2025-03-17T12:56:16.731077004Z","level":"INFO","msg":"writer: Do: started","stream_id":"0gxskhny"}
+{"time":"2025-03-17T12:56:16.731255357Z","level":"INFO","msg":"handler: started","stream_id":"0gxskhny"}
+{"time":"2025-03-17T12:56:16.731311922Z","level":"INFO","msg":"sender: started","stream_id":"0gxskhny"}
+{"time":"2025-03-17T12:56:17.393393966Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T12:56:18.187150199Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T12:56:18.187724703Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T12:56:19.154922278Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/fashion-mnist samples_0_7f9147937f711e4ba16e.png","runtime_seconds":0.529231483,"progress":"560B/560B"},{"desc":"uploading output.log","runtime_seconds":0.529226043},{"desc":"uploading config.yaml","runtime_seconds":0.207444206,"progress":"582B/582B"}],"total_operations":3}}
+{"time":"2025-03-17T12:56:19.339237558Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T12:56:19.698023422Z","level":"INFO","msg":"stream: closing","id":"0gxskhny"}
+{"time":"2025-03-17T12:56:19.698048218Z","level":"INFO","msg":"handler: closed","stream_id":"0gxskhny"}
+{"time":"2025-03-17T12:56:19.69806028Z","level":"INFO","msg":"writer: Close: closed","stream_id":"0gxskhny"}
+{"time":"2025-03-17T12:56:19.698070958Z","level":"INFO","msg":"sender: closed","stream_id":"0gxskhny"}
+{"time":"2025-03-17T12:56:19.698161877Z","level":"INFO","msg":"stream: closed","id":"0gxskhny"}

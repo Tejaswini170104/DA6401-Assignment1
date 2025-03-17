@@ -1,0 +1,16 @@
+{"time":"2025-03-17T12:50:27.904076908Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250317_125027-kv4sn5s0/logs/debug-core.log"}
+{"time":"2025-03-17T12:50:28.007316254Z","level":"INFO","msg":"created new stream","id":"kv4sn5s0"}
+{"time":"2025-03-17T12:50:28.007345208Z","level":"INFO","msg":"stream: started","id":"kv4sn5s0"}
+{"time":"2025-03-17T12:50:28.007441521Z","level":"INFO","msg":"writer: Do: started","stream_id":"kv4sn5s0"}
+{"time":"2025-03-17T12:50:28.007541287Z","level":"INFO","msg":"handler: started","stream_id":"kv4sn5s0"}
+{"time":"2025-03-17T12:50:28.007567696Z","level":"INFO","msg":"sender: started","stream_id":"kv4sn5s0"}
+{"time":"2025-03-17T12:50:28.589221569Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T12:50:38.007020585Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T12:50:38.007757499Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T12:50:39.12522192Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T12:50:39.206445442Z","level":"INFO","msg":"stream: closing","id":"kv4sn5s0"}
+{"time":"2025-03-17T12:50:39.206510773Z","level":"WARN","msg":"sender: received Exit record more than once, ignoring"}
+{"time":"2025-03-17T12:50:39.480599675Z","level":"INFO","msg":"handler: closed","stream_id":"kv4sn5s0"}
+{"time":"2025-03-17T12:50:39.480876271Z","level":"INFO","msg":"writer: Close: closed","stream_id":"kv4sn5s0"}
+{"time":"2025-03-17T12:50:39.480947163Z","level":"INFO","msg":"sender: closed","stream_id":"kv4sn5s0"}
+{"time":"2025-03-17T12:50:39.481021251Z","level":"INFO","msg":"stream: closed","id":"kv4sn5s0"}

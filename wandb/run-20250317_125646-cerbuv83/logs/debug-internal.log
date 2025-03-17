@@ -1,0 +1,16 @@
+{"time":"2025-03-17T12:56:46.538992808Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250317_125646-cerbuv83/logs/debug-core.log"}
+{"time":"2025-03-17T12:56:46.643907769Z","level":"INFO","msg":"created new stream","id":"cerbuv83"}
+{"time":"2025-03-17T12:56:46.643950318Z","level":"INFO","msg":"stream: started","id":"cerbuv83"}
+{"time":"2025-03-17T12:56:46.644902134Z","level":"INFO","msg":"writer: Do: started","stream_id":"cerbuv83"}
+{"time":"2025-03-17T12:56:46.645053286Z","level":"INFO","msg":"handler: started","stream_id":"cerbuv83"}
+{"time":"2025-03-17T12:56:46.645111144Z","level":"INFO","msg":"sender: started","stream_id":"cerbuv83"}
+{"time":"2025-03-17T12:56:47.002867737Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T12:56:54.730423084Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T12:56:54.732086948Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T12:56:55.731667938Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.35474129,"progress":"863B/863B"}],"total_operations":1}}
+{"time":"2025-03-17T12:56:55.773938871Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T12:56:56.138867533Z","level":"INFO","msg":"stream: closing","id":"cerbuv83"}
+{"time":"2025-03-17T12:56:56.138886829Z","level":"INFO","msg":"handler: closed","stream_id":"cerbuv83"}
+{"time":"2025-03-17T12:56:56.138896537Z","level":"INFO","msg":"writer: Close: closed","stream_id":"cerbuv83"}
+{"time":"2025-03-17T12:56:56.138957651Z","level":"INFO","msg":"sender: closed","stream_id":"cerbuv83"}
+{"time":"2025-03-17T12:56:56.138967179Z","level":"INFO","msg":"stream: closed","id":"cerbuv83"}

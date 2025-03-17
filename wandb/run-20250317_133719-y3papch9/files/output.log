@@ -1,0 +1,36 @@
+Epoch 1/10|cross_entropy Loss: 2.3572
+Epoch 2/10|cross_entropy Loss: 1.9821
+Epoch 3/10|cross_entropy Loss: 1.6900
+Epoch 4/10|cross_entropy Loss: 1.3577
+Epoch 5/10|cross_entropy Loss: 1.1494
+Epoch 6/10|cross_entropy Loss: 1.0762
+Epoch 7/10|cross_entropy Loss: 0.9458
+Epoch 8/10|cross_entropy Loss: 0.8576
+Epoch 9/10|cross_entropy Loss: 0.8253
+Epoch 10/10|cross_entropy Loss: 0.7916
+Epoch 1/10|squared_error Loss: 2.4335
+Epoch 2/10|squared_error Loss: 2.4203
+Epoch 3/10|squared_error Loss: 2.4078
+Epoch 4/10|squared_error Loss: 2.3958
+Epoch 5/10|squared_error Loss: 2.3844
+Epoch 6/10|squared_error Loss: 2.3734
+Epoch 7/10|squared_error Loss: 2.3628
+Epoch 8/10|squared_error Loss: 2.3527
+Epoch 9/10|squared_error Loss: 2.3429
+Epoch 10/10|squared_error Loss: 2.3335
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 686, in <module>
+    Y_pred_test_ce = nn_cross_entropy.forward(x_test)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/DA6401-Assignment1/train.py", line 157, in forward
+    a = np.concatenate([X, np.ones((n_samples, 1))], axis=1)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: all the input arrays must have same number of dimensions, but the array at index 0 has 3 dimension(s) and the array at index 1 has 2 dimension(s)
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 686, in <module>
+    Y_pred_test_ce = nn_cross_entropy.forward(x_test)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/DA6401-Assignment1/train.py", line 157, in forward
+    a = np.concatenate([X, np.ones((n_samples, 1))], axis=1)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: all the input arrays must have same number of dimensions, but the array at index 0 has 3 dimension(s) and the array at index 1 has 2 dimension(s)

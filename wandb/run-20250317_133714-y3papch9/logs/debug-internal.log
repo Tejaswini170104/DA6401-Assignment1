@@ -1,0 +1,16 @@
+{"time":"2025-03-17T13:37:14.394616088Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250317_133714-y3papch9/logs/debug-core.log"}
+{"time":"2025-03-17T13:37:14.499929946Z","level":"INFO","msg":"created new stream","id":"y3papch9"}
+{"time":"2025-03-17T13:37:14.499965182Z","level":"INFO","msg":"stream: started","id":"y3papch9"}
+{"time":"2025-03-17T13:37:14.500031806Z","level":"INFO","msg":"handler: started","stream_id":"y3papch9"}
+{"time":"2025-03-17T13:37:14.500058115Z","level":"INFO","msg":"writer: Do: started","stream_id":"y3papch9"}
+{"time":"2025-03-17T13:37:14.500220636Z","level":"INFO","msg":"sender: started","stream_id":"y3papch9"}
+{"time":"2025-03-17T13:37:14.852547419Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T13:37:15.775985933Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T13:37:15.776598328Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T13:37:16.739589677Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact confusion_matrix_heatmap","runtime_seconds":1.003434828}],"total_operations":1}}
+{"time":"2025-03-17T13:37:19.237670423Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T13:37:19.566731954Z","level":"INFO","msg":"stream: closing","id":"y3papch9"}
+{"time":"2025-03-17T13:37:19.56678899Z","level":"INFO","msg":"handler: closed","stream_id":"y3papch9"}
+{"time":"2025-03-17T13:37:19.566856175Z","level":"INFO","msg":"writer: Close: closed","stream_id":"y3papch9"}
+{"time":"2025-03-17T13:37:19.567116241Z","level":"INFO","msg":"sender: closed","stream_id":"y3papch9"}
+{"time":"2025-03-17T13:37:19.567174169Z","level":"INFO","msg":"stream: closed","id":"y3papch9"}

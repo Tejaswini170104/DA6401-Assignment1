@@ -1,0 +1,159 @@
+
+=== Training with config_1 ===
+
+Epoch 1/1|cross_entropy Loss: 0.3935
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 785, in <module>
+    f"{config.name}_train_loss": loss,
+       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'

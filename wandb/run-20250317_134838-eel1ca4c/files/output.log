@@ -1,0 +1,30 @@
+Epoch 1/10|cross_entropy Loss: 2.4216
+Epoch 2/10|cross_entropy Loss: 2.2789
+Epoch 3/10|cross_entropy Loss: 2.0171
+Epoch 4/10|cross_entropy Loss: 1.7503
+Epoch 5/10|cross_entropy Loss: 1.4492
+Epoch 6/10|cross_entropy Loss: 1.1975
+Epoch 7/10|cross_entropy Loss: 1.0950
+Epoch 8/10|cross_entropy Loss: 0.9751
+Epoch 9/10|cross_entropy Loss: 0.9079
+Epoch 10/10|cross_entropy Loss: 0.8338
+Epoch 1/10|squared_error Loss: 2.3341
+Epoch 2/10|squared_error Loss: 2.3272
+Epoch 3/10|squared_error Loss: 2.3205
+Epoch 4/10|squared_error Loss: 2.3138
+Epoch 5/10|squared_error Loss: 2.3072
+Epoch 6/10|squared_error Loss: 2.3008
+Epoch 7/10|squared_error Loss: 2.2944
+Epoch 8/10|squared_error Loss: 2.2881
+Epoch 9/10|squared_error Loss: 2.2819
+Epoch 10/10|squared_error Loss: 2.2757
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 691, in <module>
+    test_accuracy_ce = compute_accuracy(y_test.argmax(axis=1), test_predictions_ce)
+                                        ^^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 691, in <module>
+    test_accuracy_ce = compute_accuracy(y_test.argmax(axis=1), test_predictions_ce)
+                                        ^^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1

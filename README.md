@@ -1,5 +1,6 @@
 # DA6401-Assignment1
-
+wandb report link : <br>
+github repo link : <br>
 # Question 1: <br>
 Objective: <br>
 Log one sample image per class from the Fashion-MNIST dataset to Weights & Biases (W&B) for visualization.
@@ -29,7 +30,6 @@ initialize_weights() – Initializes weights using Xavier or random initializati
 forward() – Forward pass through the network layers.<br>
 compute_loss() – Computes loss (cross-entropy or squared error) with optional weight decay.<br>
 backward() – Backpropagation to calculate gradients.<br>
-update_params() – Updates weights using simple SGD.<br>
 train() – Trains the neural network with mini-batches and specified optimizer.<br>
 
 Optimizer Class: <br>
@@ -69,9 +69,9 @@ Execution: Ran sweep with wandb.agent() for 30 combinations, set run names for c
 # Question 5: <br>
 Best Neural Network Configuration: <br>
 Input Dim: 784, Output Dim: 10 (10 classes) <br>
-Hidden Layers: 3, Hidden Layer Size: 64 <br>
+Hidden Layers: 5, Hidden Layer Size: 128 <br>
 Learning Rate: 0.0001, Weight Initialization: Xavier <br>
-Optimizer: Adam, Activation: Tanh, Batch Size: 16 <br>
+Optimizer: Adam, Activation: ReLU, Batch Size: 16 <br>
 Epochs: 20, Weight Decay: 0 <br>
 Performance: <br>
 Achieved highest validation accuracy with the above configuration.
@@ -96,9 +96,9 @@ Logged loss curves directly to W&B as a line plot to visualize performance diffe
 MNIST Hyperparameter Recommendations: <br>
 Based on experimentation with Fashion-MNIST, the following 3 hyperparameter configurations were tested on the MNIST dataset:<br>
 
-Config 1 : 3 hidden layers (64), learning rate = 0.0001, optimizer = Adam, activation = Tanh, batch size = 16, weight decay = 0 → Achieved .<br>
-Config 2 : 4 hidden layers (128), learning rate = 0.0005, optimizer = RMSprop, activation = Sigmoid, batch size = 32, weight decay = 1e-5 → Achieved .<br>
-Config 3 : 3 hidden layers (128), learning rate = 0.001, optimizer = Nadam, activation = ReLU, batch size = 64, weight decay = 0.0005 → Achieved .<br>
+Config 1 : 5 hidden layers (128), learning rate = 0.0001, optimizer = Adam, activation = ReLU, batch size = 16, weight decay = 0 → Achieved test accuracy .<br>
+Config 2 : 4 hidden layers (128), learning rate = 0.0005, optimizer = RMSprop, activation = Sigmoid, batch size = 32, weight decay = 1e-5 → Achieved test accuracy .<br>
+Config 3 : 3 hidden layers (128), learning rate = 0.001, optimizer = Nadam, activation = ReLU, batch size = 64, weight decay = 0.0005 → Achieved test accuracy .<br>
 
 
 

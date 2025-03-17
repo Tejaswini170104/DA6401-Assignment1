@@ -1,0 +1,16 @@
+{"time":"2025-03-17T13:41:54.597792418Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250317_134154-22hq3a9v/logs/debug-core.log"}
+{"time":"2025-03-17T13:41:54.702926027Z","level":"INFO","msg":"created new stream","id":"22hq3a9v"}
+{"time":"2025-03-17T13:41:54.702964409Z","level":"INFO","msg":"stream: started","id":"22hq3a9v"}
+{"time":"2025-03-17T13:41:54.70306582Z","level":"INFO","msg":"writer: Do: started","stream_id":"22hq3a9v"}
+{"time":"2025-03-17T13:41:54.703235667Z","level":"INFO","msg":"handler: started","stream_id":"22hq3a9v"}
+{"time":"2025-03-17T13:41:54.703278296Z","level":"INFO","msg":"sender: started","stream_id":"22hq3a9v"}
+{"time":"2025-03-17T13:41:55.12611029Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T13:41:55.868278981Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T13:41:55.868950995Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T13:41:56.835367804Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.592471762},{"desc":"uploading media/images/fashion-mnist samples_0_7f9147937f711e4ba16e.png","runtime_seconds":0.592441486,"progress":"560B/560B"},{"desc":"uploading media/images/fashion-mnist samples_0_65989982ca9140b3494a.png","runtime_seconds":0.592436867,"progress":"523B/523B"},{"desc":"uploading media/images/fashion-mnist samples_0_352ec8bcbb7f793c3857.png","runtime_seconds":0.592432478,"progress":"503B/503B"},{"desc":"uploading config.yaml","runtime_seconds":0.278955128,"progress":"582B/582B"}],"total_operations":5}}
+{"time":"2025-03-17T13:41:57.719760795Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T13:41:58.134489276Z","level":"INFO","msg":"stream: closing","id":"22hq3a9v"}
+{"time":"2025-03-17T13:41:58.134520183Z","level":"INFO","msg":"handler: closed","stream_id":"22hq3a9v"}
+{"time":"2025-03-17T13:41:58.134554107Z","level":"INFO","msg":"writer: Close: closed","stream_id":"22hq3a9v"}
+{"time":"2025-03-17T13:41:58.134640368Z","level":"INFO","msg":"sender: closed","stream_id":"22hq3a9v"}
+{"time":"2025-03-17T13:41:58.13465749Z","level":"INFO","msg":"stream: closed","id":"22hq3a9v"}

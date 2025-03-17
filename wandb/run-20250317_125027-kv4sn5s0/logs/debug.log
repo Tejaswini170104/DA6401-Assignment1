@@ -1,0 +1,28 @@
+2025-03-17 12:50:27,895 INFO    Thread-25 (_run_job):68348 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-17 12:50:27,895 INFO    Thread-25 (_run_job):68348 [wandb_setup.py:_flush():67] Configure stats pid to 68348
+2025-03-17 12:50:27,895 INFO    Thread-25 (_run_job):68348 [wandb_setup.py:_flush():67] Loading settings from /home/codespace/.config/wandb/settings
+2025-03-17 12:50:27,895 INFO    Thread-25 (_run_job):68348 [wandb_setup.py:_flush():67] Loading settings from /workspaces/DA6401-Assignment1/wandb/settings
+2025-03-17 12:50:27,895 INFO    Thread-25 (_run_job):68348 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-17 12:50:27,895 INFO    Thread-25 (_run_job):68348 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /workspaces/DA6401-Assignment1/wandb/run-20250317_125027-kv4sn5s0/logs/debug.log
+2025-03-17 12:50:27,895 INFO    Thread-25 (_run_job):68348 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /workspaces/DA6401-Assignment1/wandb/run-20250317_125027-kv4sn5s0/logs/debug-internal.log
+2025-03-17 12:50:27,895 INFO    Thread-25 (_run_job):68348 [wandb_init.py:init():761] calling init triggers
+2025-03-17 12:50:27,895 INFO    Thread-25 (_run_job):68348 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activation': 'relu', 'batch_size': 16, 'epochs': 10, 'hidden_layer_size': 128, 'learning_rate': 0.0001, 'num_hidden_layers': 3, 'optimizer': 'adam', 'weight_decay': 0, 'weight_init': 'xavier'}
+config: {'_wandb': {}}
+2025-03-17 12:50:27,895 INFO    Thread-25 (_run_job):68348 [wandb_init.py:init():784] starting backend
+2025-03-17 12:50:27,895 INFO    Thread-25 (_run_job):68348 [wandb_init.py:init():788] sending inform_init request
+2025-03-17 12:50:27,896 INFO    Thread-25 (_run_job):68348 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-03-17 12:50:27,896 INFO    Thread-25 (_run_job):68348 [wandb_init.py:init():798] backend started and connected
+2025-03-17 12:50:27,896 INFO    Thread-25 (_run_job):68348 [wandb_run.py:_config_callback():1261] config_cb None None {'activation': 'relu', 'batch_size': 16, 'epochs': 10, 'hidden_layer_size': 128, 'learning_rate': 0.0001, 'num_hidden_layers': 3, 'optimizer': 'adam', 'weight_decay': 0, 'weight_init': 'xavier'}
+2025-03-17 12:50:27,897 INFO    Thread-25 (_run_job):68348 [wandb_init.py:init():891] updated telemetry
+2025-03-17 12:50:27,903 INFO    Thread-25 (_run_job):68348 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-17 12:50:28,587 INFO    Thread-25 (_run_job):68348 [wandb_init.py:init():990] starting run threads in backend
+2025-03-17 12:50:28,749 INFO    Thread-25 (_run_job):68348 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-17 12:50:28,749 INFO    Thread-25 (_run_job):68348 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-17 12:50:28,749 INFO    Thread-25 (_run_job):68348 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-17 12:50:28,749 INFO    Thread-25 (_run_job):68348 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-17 12:50:28,750 INFO    Thread-25 (_run_job):68348 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-17 12:50:38,005 INFO    MainThread:68348 [wandb_run.py:_finish():2112] finishing run tejaswiniksssn-indian-institute-of-technology-madras/fashion-mnist-classification-v4/kv4sn5s0
+2025-03-17 12:50:38,006 INFO    MainThread:68348 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 0
+2025-03-17 12:50:38,006 INFO    MainThread:68348 [wandb_run.py:_restore():2322] restore
+2025-03-17 12:50:38,006 INFO    MainThread:68348 [wandb_run.py:_restore():2328] restore done
+2025-03-17 12:50:39,205 INFO    MsgRouterThr:68348 [mailbox.py:close():129] Closing mailbox, abandoning 2 handles.
