@@ -1,0 +1,23 @@
+Epoch 1/10|cross_entropy Loss: 2.3506
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 662, in <module>
+    cross_entropy_loss = nn_cross_entropy.train(x_train, y_train, epochs=10, optimizer=optimizer, loss_type="cross_entropy")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/DA6401-Assignment1/train.py", line 290, in train
+    grads = self.backward(X_batch, Y_batch)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/DA6401-Assignment1/train.py", line 239, in backward
+    dA = dA[:, :-1]
+    ^^
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 662, in <module>
+    cross_entropy_loss = nn_cross_entropy.train(x_train, y_train, epochs=10, optimizer=optimizer, loss_type="cross_entropy")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/DA6401-Assignment1/train.py", line 290, in train
+    grads = self.backward(X_batch, Y_batch)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/DA6401-Assignment1/train.py", line 239, in backward
+    dA = dA[:, :-1]
+    ^^
+KeyboardInterrupt

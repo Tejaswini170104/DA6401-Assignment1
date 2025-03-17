@@ -1,6 +1,6 @@
 # DA6401-Assignment1
-wandb report link : <br>
-github repo link : <br>
+wandb report link : https://wandb.ai/tejaswiniksssn-indian-institute-of-technology-madras/fashion-mnist-classification-v7/reports/DA6401-asg01-report--VmlldzoxMTgzOTg5NQ <br>
+github repo link : https://github.com/Tejaswini170104/DA6401-Assignment1 <br>
 # Question 1: <br>
 Objective: <br>
 Log one sample image per class from the Fashion-MNIST dataset to Weights & Biases (W&B) for visualization.
@@ -30,6 +30,7 @@ initialize_weights() – Initializes weights using Xavier or random initializati
 forward() – Forward pass through the network layers.<br>
 compute_loss() – Computes loss (cross-entropy or squared error) with optional weight decay.<br>
 backward() – Backpropagation to calculate gradients.<br>
+default optimizer set as the best performing one, "adam". <br>
 train() – Trains the neural network with mini-batches and specified optimizer.<br>
 
 Optimizer Class: <br>

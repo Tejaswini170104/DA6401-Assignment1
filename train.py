@@ -398,7 +398,7 @@ if __name__ == '__main__':
     num_hidden_layers = 2
     hidden_layer_dim = 128
     learning_rate = 0.01
-    epochs = 10  # You may increase epochs for better performance.
+    epochs = 15  # You may increase epochs for better performance.
     batch_size = 128  # Mini-batch size.
     weight_init = "random"
     weight_decay = 0.0
@@ -543,22 +543,22 @@ wandb.finish()
 # BEST Neural network configuration.
 input_dim = 28 * 28  # 784 features.
 output_dim = 10 # 10 classes.
-num_hidden_layers = 5
+num_hidden_layers = 3
 hidden_layer_dim = 128
-learning_rate = 0.0001
-epochs = 15  # You may increase epochs for better performance.
+learning_rate = 0.001
+epochs = 10  # You may increase epochs for better performance.
 batch_size = 16  # Mini-batch size.
 weight_init = "xavier"
-weight_decay = 0
+weight_decay = 0.0005
 
 
 # Initialize the neural network.
 nn = FeedForwardNN(input_dim, output_dim, num_hidden_layers, hidden_layer_dim,
-                       lr=learning_rate, act_hidden="relu", act_output="softmax", weight_init = "xavier", weight_decay = 0.0)
+                       lr=learning_rate, act_hidden="tanh", act_output="softmax", weight_init = "xavier", weight_decay = 0.0005)
 
 
 # Select optimizer (options: "sgd", "momentum", "nesterov", "rmsprop", "adam", "nadam").
-optimizer_type = "adam"
+optimizer_type = "nadam"
 optimizer = Optimizer(parameters=nn.W, optimizer_type=optimizer_type, lr=learning_rate)
 
 
