@@ -21,7 +21,7 @@ for class_idx in range(10):
     sample_labels.append(class_names[class_idx])
 
 # initialize wandb
-wandb.init(project="fashion-mnist-classification-v2",
+wandb.init(project="fashion-mnist-classification-v3",
            entity="tejaswiniksssn-indian-institute-of-technology-madras",
            name="fashion-mnist-samples")
 # log images into wandb
@@ -441,7 +441,7 @@ if __name__ == '__main__':
 
 # Define the sweep configuration
 sweep_config = {
-    "method": "random",  # Random search strategy for efficiency
+    "method": "bayes",  # Random search strategy for efficiency
     "metric": {"name": "val_accuracy", "goal": "maximize"},
     "parameters": {
         "epochs": {"values": [5, 10]},
@@ -458,16 +458,17 @@ sweep_config = {
 
 
 # Initialize the sweep
-sweep_id = wandb.sweep(sweep_config, project="fashion-mnist-classification-v2")
+sweep_id = wandb.sweep(sweep_config, project="fashion-mnist-classification-v3")
 
 
 # Load and preprocess data
 (x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
 # split training data into train & validation (90%-10%)
-val_split = int(0.9 * len(x_train))
-x_train, x_val = x_train[:val_split], x_train[val_split:]
-y_train, y_val = y_train[:val_split], y_train[val_split:]
+from sklearn.model_selection import train_test_split
 
+x_train, x_val, y_train, y_val = train_test_split(
+    x_train, y_train, test_size=0.1, random_state=42, shuffle=True
+)
 
 x_train = x_train.reshape(-1, 28*28).astype('float32') / 255.0
 x_val = x_val.reshape(-1, 28*28).astype('float32') / 255.0
@@ -482,7 +483,7 @@ y_test = np.eye(num_classes)[y_test]
 
 def train(config=None):
     run = wandb.init(
-        project="fashion-mnist-classification-v2",
+        project="fashion-mnist-classification-v3",
         entity="tejaswiniksssn-indian-institute-of-technology-madras",
         config=config
     )
@@ -557,7 +558,7 @@ output_dim = 10 # 10 classes.
 num_hidden_layers = 3
 hidden_layer_dim = 64
 learning_rate = 0.0001
-epochs = 10  # You may increase epochs for better performance.
+epochs = 20  # You may increase epochs for better performance.
 batch_size = 16  # Mini-batch size.
 weight_init = "xavier"
 weight_decay = 0
@@ -606,11 +607,14 @@ print(f"Test Accuracy: {test_accuracy:.2%}")
 # Ensure y_test and test_predictions are in the correct format
 # Convert y_test_onehot back to class indices for confusion matrix
 y_test_labels = np.argmax(y_test_onehot, axis=1)
-
 if wandb.run is not None:
     wandb.finish()
 
-wandb.init(project="fashion-mnist-classification-v2", name="confusion_matrix_table")
+import seaborn as sns
+import matplotlib.pyplot as plt
+# Initialize a new W&B run
+wandb.init(project="fashion-mnist-classification-v3", name="confusion_matrix_heatmap_artifact")
+
 num_classes = 10
 conf_matrix = np.zeros((num_classes, num_classes), dtype=int)
 
@@ -623,20 +627,6 @@ class_labels = [
     "T-shirt/top", "Trouser", "Pullover", "Dress", "Coat",
     "Sandal", "Shirt", "Sneaker", "Bag", "Ankle boot"
 ]
-
-conf_matrix_df = pd.DataFrame(conf_matrix.astype(int), index=class_labels, columns=class_labels)
-
-wandb.log({
-    "confusion_matrix_table": wandb.Table(dataframe=conf_matrix_df)
-})
-
-# Finish wandb run
-wandb.finish()
-
-import seaborn as sns
-import matplotlib.pyplot as plt
-# Initialize a new W&B run
-wandb.init(project="fashion-mnist-classification-v2", name="confusion_matrix_heatmap_artifact")
 
 # Create a DataFrame from the confusion matrix
 conf_matrix_df = pd.DataFrame(conf_matrix.astype(int), index=class_labels, columns=class_labels)
@@ -667,7 +657,7 @@ wandb.log_artifact(artifact)
 # Finish the W&B run
 wandb.finish()
 
-wandb.init(project="fashion-mnist-classification-v2", name="loss-comparison")
+wandb.init(project="fashion-mnist-classification-v3", name="loss-comparison")
 
 # Load and preprocess data
 (x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
@@ -710,7 +700,7 @@ from keras.datasets import mnist # type: ignore
 # Load MNIST dataset
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
-wandb.init(project="fashion-mnist-classification-v2",name="mnist performance")
+wandb.init(project="fashion-mnist-classification-v3",name="mnist performance")
 # Preprocessing
 x_train = x_train.reshape(-1, 28 * 28).astype('float32') / 255.0
 x_test = x_test.reshape(-1, 28 * 28).astype('float32') / 255.0
@@ -798,7 +788,7 @@ for config in configs:
 
         # Log loss and epoch on W&B
         wandb.log({
-            f"{config['name']}_train_loss": loss,
+            f"{config.name}_train_loss": loss,
             "epoch": epoch + 1
         })
 

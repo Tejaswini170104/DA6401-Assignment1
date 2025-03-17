@@ -1,0 +1,3 @@
+Epoch 1/1|cross_entropy Loss: 0.4785
+Epoch 1/1|cross_entropy Loss: 0.3771
+[34m[1mwandb[0m: Ctrl + C detected. Stopping sweep.

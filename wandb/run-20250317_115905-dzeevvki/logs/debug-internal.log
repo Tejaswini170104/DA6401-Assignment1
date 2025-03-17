@@ -1,0 +1,16 @@
+{"time":"2025-03-17T11:59:05.3530307Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250317_115905-dzeevvki/logs/debug-core.log"}
+{"time":"2025-03-17T11:59:05.45679348Z","level":"INFO","msg":"created new stream","id":"dzeevvki"}
+{"time":"2025-03-17T11:59:05.456872748Z","level":"INFO","msg":"stream: started","id":"dzeevvki"}
+{"time":"2025-03-17T11:59:05.456942471Z","level":"INFO","msg":"writer: Do: started","stream_id":"dzeevvki"}
+{"time":"2025-03-17T11:59:05.457090457Z","level":"INFO","msg":"handler: started","stream_id":"dzeevvki"}
+{"time":"2025-03-17T11:59:05.457127526Z","level":"INFO","msg":"sender: started","stream_id":"dzeevvki"}
+{"time":"2025-03-17T11:59:05.797565975Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T12:00:43.25932018Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T12:00:43.259957148Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T12:00:44.260805209Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.342171883,"progress":"370B/370B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.342162846,"progress":"264B/264B"},{"desc":"uploading config.yaml","runtime_seconds":0.042179357,"progress":"868B/868B"}],"total_operations":3}}
+{"time":"2025-03-17T12:00:45.49833099Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T12:00:45.831944938Z","level":"INFO","msg":"stream: closing","id":"dzeevvki"}
+{"time":"2025-03-17T12:00:45.831965276Z","level":"INFO","msg":"handler: closed","stream_id":"dzeevvki"}
+{"time":"2025-03-17T12:00:45.831976156Z","level":"INFO","msg":"writer: Close: closed","stream_id":"dzeevvki"}
+{"time":"2025-03-17T12:00:45.832043101Z","level":"INFO","msg":"sender: closed","stream_id":"dzeevvki"}
+{"time":"2025-03-17T12:00:45.832054061Z","level":"INFO","msg":"stream: closed","id":"dzeevvki"}

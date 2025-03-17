@@ -1,0 +1,23 @@
+2025-03-17 12:05:12,466 INFO    Thread-34 (_run_job):41214 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-17 12:05:12,466 INFO    Thread-34 (_run_job):41214 [wandb_setup.py:_flush():67] Configure stats pid to 41214
+2025-03-17 12:05:12,466 INFO    Thread-34 (_run_job):41214 [wandb_setup.py:_flush():67] Loading settings from /home/codespace/.config/wandb/settings
+2025-03-17 12:05:12,466 INFO    Thread-34 (_run_job):41214 [wandb_setup.py:_flush():67] Loading settings from /workspaces/DA6401-Assignment1/wandb/settings
+2025-03-17 12:05:12,466 INFO    Thread-34 (_run_job):41214 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-17 12:05:12,466 INFO    Thread-34 (_run_job):41214 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /workspaces/DA6401-Assignment1/wandb/run-20250317_120512-s459c31y/logs/debug.log
+2025-03-17 12:05:12,466 INFO    Thread-34 (_run_job):41214 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /workspaces/DA6401-Assignment1/wandb/run-20250317_120512-s459c31y/logs/debug-internal.log
+2025-03-17 12:05:12,466 INFO    Thread-34 (_run_job):41214 [wandb_init.py:init():761] calling init triggers
+2025-03-17 12:05:12,466 INFO    Thread-34 (_run_job):41214 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activation': 'relu', 'batch_size': 16, 'epochs': 10, 'hidden_layer_size': 128, 'learning_rate': 0.0001, 'num_hidden_layers': 4, 'optimizer': 'adam', 'weight_decay': 0, 'weight_init': 'xavier'}
+config: {'_wandb': {}}
+2025-03-17 12:05:12,466 INFO    Thread-34 (_run_job):41214 [wandb_init.py:init():784] starting backend
+2025-03-17 12:05:12,466 INFO    Thread-34 (_run_job):41214 [wandb_init.py:init():788] sending inform_init request
+2025-03-17 12:05:12,467 INFO    Thread-34 (_run_job):41214 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-03-17 12:05:12,467 INFO    Thread-34 (_run_job):41214 [wandb_init.py:init():798] backend started and connected
+2025-03-17 12:05:12,468 INFO    Thread-34 (_run_job):41214 [wandb_run.py:_config_callback():1261] config_cb None None {'activation': 'relu', 'batch_size': 16, 'epochs': 10, 'hidden_layer_size': 128, 'learning_rate': 0.0001, 'num_hidden_layers': 4, 'optimizer': 'adam', 'weight_decay': 0, 'weight_init': 'xavier'}
+2025-03-17 12:05:12,469 INFO    Thread-34 (_run_job):41214 [wandb_init.py:init():891] updated telemetry
+2025-03-17 12:05:12,477 INFO    Thread-34 (_run_job):41214 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-17 12:05:12,977 INFO    Thread-34 (_run_job):41214 [wandb_init.py:init():990] starting run threads in backend
+2025-03-17 12:05:13,170 INFO    Thread-34 (_run_job):41214 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-17 12:05:13,170 INFO    Thread-34 (_run_job):41214 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-17 12:05:13,170 INFO    Thread-34 (_run_job):41214 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-17 12:05:13,170 INFO    Thread-34 (_run_job):41214 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-17 12:05:13,171 INFO    Thread-34 (_run_job):41214 [wandb_init.py:init():1032] run started, returning control to user process

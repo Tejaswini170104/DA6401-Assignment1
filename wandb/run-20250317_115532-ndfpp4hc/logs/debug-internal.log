@@ -1,0 +1,16 @@
+{"time":"2025-03-17T11:55:32.157189958Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250317_115532-ndfpp4hc/logs/debug-core.log"}
+{"time":"2025-03-17T11:55:32.261227803Z","level":"INFO","msg":"created new stream","id":"ndfpp4hc"}
+{"time":"2025-03-17T11:55:32.261389735Z","level":"INFO","msg":"stream: started","id":"ndfpp4hc"}
+{"time":"2025-03-17T11:55:32.261438566Z","level":"INFO","msg":"writer: Do: started","stream_id":"ndfpp4hc"}
+{"time":"2025-03-17T11:55:32.261461629Z","level":"INFO","msg":"handler: started","stream_id":"ndfpp4hc"}
+{"time":"2025-03-17T11:55:32.261484402Z","level":"INFO","msg":"sender: started","stream_id":"ndfpp4hc"}
+{"time":"2025-03-17T11:55:32.603688815Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T11:57:10.928600805Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T11:57:10.92964349Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T11:57:11.930161165Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.356648816,"progress":"370B/370B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.356638366,"progress":"252B/252B"},{"desc":"uploading config.yaml","runtime_seconds":0.051705633,"progress":"867B/867B"}],"total_operations":3}}
+{"time":"2025-03-17T11:57:12.506855598Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T11:57:12.861972048Z","level":"INFO","msg":"stream: closing","id":"ndfpp4hc"}
+{"time":"2025-03-17T11:57:12.862169977Z","level":"INFO","msg":"handler: closed","stream_id":"ndfpp4hc"}
+{"time":"2025-03-17T11:57:12.862210252Z","level":"INFO","msg":"writer: Close: closed","stream_id":"ndfpp4hc"}
+{"time":"2025-03-17T11:57:12.862421957Z","level":"INFO","msg":"sender: closed","stream_id":"ndfpp4hc"}
+{"time":"2025-03-17T11:57:12.862614506Z","level":"INFO","msg":"stream: closed","id":"ndfpp4hc"}
