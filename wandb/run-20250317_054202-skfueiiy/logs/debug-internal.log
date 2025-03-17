@@ -1,0 +1,16 @@
+{"time":"2025-03-17T05:42:02.393222544Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250317_054202-skfueiiy/logs/debug-core.log"}
+{"time":"2025-03-17T05:42:02.499174705Z","level":"INFO","msg":"created new stream","id":"skfueiiy"}
+{"time":"2025-03-17T05:42:02.499213848Z","level":"INFO","msg":"stream: started","id":"skfueiiy"}
+{"time":"2025-03-17T05:42:02.499286804Z","level":"INFO","msg":"handler: started","stream_id":"skfueiiy"}
+{"time":"2025-03-17T05:42:02.499314245Z","level":"INFO","msg":"writer: Do: started","stream_id":"skfueiiy"}
+{"time":"2025-03-17T05:42:02.4994236Z","level":"INFO","msg":"sender: started","stream_id":"skfueiiy"}
+{"time":"2025-03-17T05:42:02.816236442Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T05:42:03.682884007Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T05:42:03.68340504Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T05:42:04.646176972Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-metadata.json","runtime_seconds":1.485232173,"progress":"803B/803B"},{"desc":"uploading artifact confusion_matrix_heatmap","runtime_seconds":0.98383056},{"desc":"uploading output.log","runtime_seconds":0.628064602},{"desc":"uploading wandb-summary.json","runtime_seconds":0.628054122,"progress":"24B/24B"},{"desc":"uploading config.yaml","runtime_seconds":0.331349995,"progress":"864B/864B"}],"total_operations":5}}
+{"time":"2025-03-17T05:42:07.905532997Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T05:42:08.359551851Z","level":"INFO","msg":"stream: closing","id":"skfueiiy"}
+{"time":"2025-03-17T05:42:08.359576457Z","level":"INFO","msg":"handler: closed","stream_id":"skfueiiy"}
+{"time":"2025-03-17T05:42:08.359589121Z","level":"INFO","msg":"writer: Close: closed","stream_id":"skfueiiy"}
+{"time":"2025-03-17T05:42:08.359649864Z","level":"INFO","msg":"sender: closed","stream_id":"skfueiiy"}
+{"time":"2025-03-17T05:42:08.359660815Z","level":"INFO","msg":"stream: closed","id":"skfueiiy"}

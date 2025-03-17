@@ -1,0 +1,16 @@
+{"time":"2025-03-17T05:41:57.744427545Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250317_054157-skfueiiy/logs/debug-core.log"}
+{"time":"2025-03-17T05:41:57.850449165Z","level":"INFO","msg":"created new stream","id":"skfueiiy"}
+{"time":"2025-03-17T05:41:57.85049435Z","level":"INFO","msg":"stream: started","id":"skfueiiy"}
+{"time":"2025-03-17T05:41:57.850532319Z","level":"INFO","msg":"writer: Do: started","stream_id":"skfueiiy"}
+{"time":"2025-03-17T05:41:57.850564441Z","level":"INFO","msg":"sender: started","stream_id":"skfueiiy"}
+{"time":"2025-03-17T05:41:57.85058529Z","level":"INFO","msg":"handler: started","stream_id":"skfueiiy"}
+{"time":"2025-03-17T05:41:58.217509678Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T05:41:58.712298714Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T05:41:58.712848151Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T05:41:59.686454428Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-skfueiiy-confusion_matrix_table","runtime_seconds":0.672737929},{"desc":"uploading media/table/confusion_matrix_table_0_1e28fa73aea97f038ca7.table.json","runtime_seconds":0.341036257,"progress":"499B/499B"},{"desc":"uploading output.log","runtime_seconds":0.341023463},{"desc":"uploading wandb-summary.json","runtime_seconds":0.341019315,"progress":"753B/753B"},{"desc":"uploading config.yaml","runtime_seconds":0.032223722,"progress":"864B/864B"}],"total_operations":5}}
+{"time":"2025-03-17T05:42:01.976388575Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T05:42:02.338616909Z","level":"INFO","msg":"stream: closing","id":"skfueiiy"}
+{"time":"2025-03-17T05:42:02.338636856Z","level":"INFO","msg":"handler: closed","stream_id":"skfueiiy"}
+{"time":"2025-03-17T05:42:02.338648358Z","level":"INFO","msg":"writer: Close: closed","stream_id":"skfueiiy"}
+{"time":"2025-03-17T05:42:02.338734178Z","level":"INFO","msg":"sender: closed","stream_id":"skfueiiy"}
+{"time":"2025-03-17T05:42:02.338749026Z","level":"INFO","msg":"stream: closed","id":"skfueiiy"}

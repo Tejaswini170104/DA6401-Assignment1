@@ -1,0 +1,16 @@
+{"time":"2025-03-17T04:40:32.260604303Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250317_044032-i4raams7/logs/debug-core.log"}
+{"time":"2025-03-17T04:40:32.364905006Z","level":"INFO","msg":"created new stream","id":"i4raams7"}
+{"time":"2025-03-17T04:40:32.364941695Z","level":"INFO","msg":"stream: started","id":"i4raams7"}
+{"time":"2025-03-17T04:40:32.365051922Z","level":"INFO","msg":"writer: Do: started","stream_id":"i4raams7"}
+{"time":"2025-03-17T04:40:32.365254871Z","level":"INFO","msg":"handler: started","stream_id":"i4raams7"}
+{"time":"2025-03-17T04:40:32.365299114Z","level":"INFO","msg":"sender: started","stream_id":"i4raams7"}
+{"time":"2025-03-17T04:40:32.712937476Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T04:41:06.242788555Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T04:41:06.243458236Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T04:41:07.241081069Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T04:41:07.245602018Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 4-4, summary, console lines 4-4","runtime_seconds":0.004373824}],"total_operations":1}}
+{"time":"2025-03-17T04:41:07.587268602Z","level":"INFO","msg":"stream: closing","id":"i4raams7"}
+{"time":"2025-03-17T04:41:07.587296454Z","level":"INFO","msg":"handler: closed","stream_id":"i4raams7"}
+{"time":"2025-03-17T04:41:07.587317754Z","level":"INFO","msg":"writer: Close: closed","stream_id":"i4raams7"}
+{"time":"2025-03-17T04:41:07.587393676Z","level":"INFO","msg":"sender: closed","stream_id":"i4raams7"}
+{"time":"2025-03-17T04:41:07.587412941Z","level":"INFO","msg":"stream: closed","id":"i4raams7"}

@@ -1,0 +1,16 @@
+{"time":"2025-03-17T04:38:30.368537887Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250317_043830-vaabpy5f/logs/debug-core.log"}
+{"time":"2025-03-17T04:38:30.472454444Z","level":"INFO","msg":"created new stream","id":"vaabpy5f"}
+{"time":"2025-03-17T04:38:30.472490211Z","level":"INFO","msg":"stream: started","id":"vaabpy5f"}
+{"time":"2025-03-17T04:38:30.472580649Z","level":"INFO","msg":"writer: Do: started","stream_id":"vaabpy5f"}
+{"time":"2025-03-17T04:38:30.472739456Z","level":"INFO","msg":"handler: started","stream_id":"vaabpy5f"}
+{"time":"2025-03-17T04:38:30.47286472Z","level":"INFO","msg":"sender: started","stream_id":"vaabpy5f"}
+{"time":"2025-03-17T04:38:30.829950565Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T04:39:38.243058374Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T04:39:38.243701736Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T04:39:39.246341053Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.352513099,"progress":"370B/370B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.352501508,"progress":"253B/253B"},{"desc":"uploading config.yaml","runtime_seconds":0.034261511,"progress":"864B/864B"}],"total_operations":3}}
+{"time":"2025-03-17T04:39:39.596605984Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T04:39:39.966351165Z","level":"INFO","msg":"stream: closing","id":"vaabpy5f"}
+{"time":"2025-03-17T04:39:39.966372535Z","level":"INFO","msg":"handler: closed","stream_id":"vaabpy5f"}
+{"time":"2025-03-17T04:39:39.966383616Z","level":"INFO","msg":"writer: Close: closed","stream_id":"vaabpy5f"}
+{"time":"2025-03-17T04:39:39.966443628Z","level":"INFO","msg":"sender: closed","stream_id":"vaabpy5f"}
+{"time":"2025-03-17T04:39:39.966453757Z","level":"INFO","msg":"stream: closed","id":"vaabpy5f"}

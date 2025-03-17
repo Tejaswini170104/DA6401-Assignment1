@@ -1,0 +1,16 @@
+{"time":"2025-03-17T05:39:26.316456129Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250317_053926-vg747xvg/logs/debug-core.log"}
+{"time":"2025-03-17T05:39:26.423157177Z","level":"INFO","msg":"created new stream","id":"vg747xvg"}
+{"time":"2025-03-17T05:39:26.423200438Z","level":"INFO","msg":"stream: started","id":"vg747xvg"}
+{"time":"2025-03-17T05:39:26.423219565Z","level":"INFO","msg":"writer: Do: started","stream_id":"vg747xvg"}
+{"time":"2025-03-17T05:39:26.423570912Z","level":"INFO","msg":"handler: started","stream_id":"vg747xvg"}
+{"time":"2025-03-17T05:39:26.423635102Z","level":"INFO","msg":"sender: started","stream_id":"vg747xvg"}
+{"time":"2025-03-17T05:39:26.761325554Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T05:40:31.067253201Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T05:40:31.067837273Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T05:40:32.068508953Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.366602086,"progress":"370B/370B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.366591547,"progress":"265B/265B"},{"desc":"uploading config.yaml","runtime_seconds":0.032780673,"progress":"872B/872B"}],"total_operations":3}}
+{"time":"2025-03-17T05:40:32.63614987Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T05:40:32.964222661Z","level":"INFO","msg":"stream: closing","id":"vg747xvg"}
+{"time":"2025-03-17T05:40:32.964280549Z","level":"INFO","msg":"handler: closed","stream_id":"vg747xvg"}
+{"time":"2025-03-17T05:40:32.964296589Z","level":"INFO","msg":"writer: Close: closed","stream_id":"vg747xvg"}
+{"time":"2025-03-17T05:40:32.964365748Z","level":"INFO","msg":"sender: closed","stream_id":"vg747xvg"}
+{"time":"2025-03-17T05:40:32.964469212Z","level":"INFO","msg":"stream: closed","id":"vg747xvg"}

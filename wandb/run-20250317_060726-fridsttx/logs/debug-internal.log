@@ -1,0 +1,16 @@
+{"time":"2025-03-17T06:07:26.578824643Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250317_060726-fridsttx/logs/debug-core.log"}
+{"time":"2025-03-17T06:07:26.687554024Z","level":"INFO","msg":"created new stream","id":"fridsttx"}
+{"time":"2025-03-17T06:07:26.687591333Z","level":"INFO","msg":"stream: started","id":"fridsttx"}
+{"time":"2025-03-17T06:07:26.687663248Z","level":"INFO","msg":"handler: started","stream_id":"fridsttx"}
+{"time":"2025-03-17T06:07:26.687723891Z","level":"INFO","msg":"writer: Do: started","stream_id":"fridsttx"}
+{"time":"2025-03-17T06:07:26.687765988Z","level":"INFO","msg":"sender: started","stream_id":"fridsttx"}
+{"time":"2025-03-17T06:07:27.1051354Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T06:07:27.598894862Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T06:07:27.599455468Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T06:07:28.562891741Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-fridsttx-confusion_matrix_table","runtime_seconds":0.667029801},{"desc":"uploading media/table/confusion_matrix_table_0_e1fe5fea4124de566fb7.table.json","runtime_seconds":0.328750349,"progress":"499B/499B"},{"desc":"uploading output.log","runtime_seconds":0.328736522},{"desc":"uploading wandb-summary.json","runtime_seconds":0.328732514,"progress":"753B/753B"}],"total_operations":4}}
+{"time":"2025-03-17T06:07:30.770187722Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T06:07:31.123776152Z","level":"INFO","msg":"stream: closing","id":"fridsttx"}
+{"time":"2025-03-17T06:07:31.123831676Z","level":"INFO","msg":"handler: closed","stream_id":"fridsttx"}
+{"time":"2025-03-17T06:07:31.123858766Z","level":"INFO","msg":"writer: Close: closed","stream_id":"fridsttx"}
+{"time":"2025-03-17T06:07:31.12392509Z","level":"INFO","msg":"sender: closed","stream_id":"fridsttx"}
+{"time":"2025-03-17T06:07:31.123947723Z","level":"INFO","msg":"stream: closed","id":"fridsttx"}

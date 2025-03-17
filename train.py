@@ -21,7 +21,7 @@ for class_idx in range(10):
     sample_labels.append(class_names[class_idx])
 
 # initialize wandb
-wandb.init(project="classification",
+wandb.init(project="fashion-mnist-classification-v2",
            entity="tejaswiniksssn-indian-institute-of-technology-madras",
            name="fashion-mnist-samples")
 # log images into wandb
@@ -100,8 +100,8 @@ def compute_accuracy(y_true, y_pred):
 # Neural Network Class
 # ---------------------------
 class FeedForwardNN:
-    def __init__(self, input_dim, output_dim, num_hidden_layers, hidden_layer_dim, lr=0.001,
-                 act_hidden="relu", act_output="softmax", weight_init="xavier", weight_decay = 0.0):
+    def __init__(self, input_dim, output_dim, num_hidden_layers, hidden_layer_dim, lr=0.0001,
+                 act_hidden="tanh", act_output="softmax", weight_init="xavier", weight_decay = 0.0):
         """
         Initializes the feed-forward neural network.
         Bias is incorporated by appending a column of ones to the input of each layer.
@@ -316,7 +316,7 @@ class FeedForwardNN:
 # Optimizer Implementation
 # ---------------------------
 class Optimizer:
-    def __init__(self, parameters, optimizer_type="nadam", lr=0.001, momentum=0.9, beta=0.9, beta1=0.9, beta2=0.999, epsilon=1e-8):
+    def __init__(self, parameters, optimizer_type="adam", lr=0.0001, momentum=0.9, beta=0.9, beta1=0.9, beta2=0.999, epsilon=1e-8):
         """
         Initializes the optimizer.
         Args:
@@ -458,7 +458,7 @@ sweep_config = {
 
 
 # Initialize the sweep
-sweep_id = wandb.sweep(sweep_config, project="classification")
+sweep_id = wandb.sweep(sweep_config, project="fashion-mnist-classification-v2")
 
 
 # Load and preprocess data
@@ -482,7 +482,7 @@ y_test = np.eye(num_classes)[y_test]
 
 def train(config=None):
     run = wandb.init(
-        project="classification",
+        project="fashion-mnist-classification-v2",
         entity="tejaswiniksssn-indian-institute-of-technology-madras",
         config=config
     )
@@ -548,28 +548,28 @@ def train(config=None):
 
 
 # Run the sweep
-wandb.agent(sweep_id, function=train, count=1)
+wandb.agent(sweep_id, function=train, count=30)
 wandb.finish()
 
 # BEST Neural network configuration.
 input_dim = 28 * 28  # 784 features.
 output_dim = 10 # 10 classes.
 num_hidden_layers = 3
-hidden_layer_dim = 128
-learning_rate = 0.001
+hidden_layer_dim = 64
+learning_rate = 0.0001
 epochs = 10  # You may increase epochs for better performance.
-batch_size = 32  # Mini-batch size.
-weight_init = "random"
-weight_decay = 0.5
+batch_size = 16  # Mini-batch size.
+weight_init = "xavier"
+weight_decay = 0
 
 
 # Initialize the neural network.
 nn = FeedForwardNN(input_dim, output_dim, num_hidden_layers, hidden_layer_dim,
-                       lr=learning_rate, act_hidden="relu", act_output="softmax", weight_init = "random", weight_decay = 0.0)
+                       lr=learning_rate, act_hidden="tanh", act_output="softmax", weight_init = "xavier", weight_decay = 0.0)
 
 
 # Select optimizer (options: "sgd", "momentum", "nesterov", "rmsprop", "adam", "nadam").
-optimizer_type = "rmsprop"
+optimizer_type = "adam"
 optimizer = Optimizer(parameters=nn.W, optimizer_type=optimizer_type, lr=learning_rate)
 
 
@@ -610,7 +610,7 @@ y_test_labels = np.argmax(y_test_onehot, axis=1)
 if wandb.run is not None:
     wandb.finish()
 
-wandb.init(project="classification", name="confusion_matrix_table")
+wandb.init(project="fashion-mnist-classification-v2", name="confusion_matrix_table")
 num_classes = 10
 conf_matrix = np.zeros((num_classes, num_classes), dtype=int)
 
@@ -636,24 +636,24 @@ wandb.finish()
 import seaborn as sns
 import matplotlib.pyplot as plt
 # Initialize a new W&B run
-wandb.init(project="classification", name="confusion_matrix_heatmap_artifact")
+wandb.init(project="fashion-mnist-classification-v2", name="confusion_matrix_heatmap_artifact")
 
 # Create a DataFrame from the confusion matrix
 conf_matrix_df = pd.DataFrame(conf_matrix.astype(int), index=class_labels, columns=class_labels)
 
-# ✅ Create the heatmap using Seaborn
+# Create the heatmap using Seaborn
 plt.figure(figsize=(10, 8))
 sns.heatmap(conf_matrix_df, annot=True, cmap="coolwarm", fmt="d", xticklabels=class_labels, yticklabels=class_labels)
 plt.title("Confusion Matrix Heatmap")
 plt.xlabel("Predicted Label")
 plt.ylabel("True Label")
 
-# ✅ Save the heatmap as a file
+# Save the heatmap as a file
 heatmap_path = "confusion_matrix_heatmap.png"
 plt.savefig(heatmap_path)  # Save as PNG
 plt.close()  # Close the plot to avoid memory leaks
 
-# ✅ Create a W&B artifact
+# Create a W&B artifact
 artifact = wandb.Artifact(
     name="confusion_matrix_heatmap",
     type="heatmap",
@@ -661,13 +661,13 @@ artifact = wandb.Artifact(
 )
 artifact.add_file(heatmap_path)  # Attach the file to the artifact
 
-# ✅ Log the artifact to W&B
+# Log the artifact to W&B
 wandb.log_artifact(artifact)
 
-# ✅ Finish the W&B run
+# Finish the W&B run
 wandb.finish()
 
-wandb.init(project="classification", name="loss-comparison")
+wandb.init(project="fashion-mnist-classification-v2", name="loss-comparison")
 
 # Load and preprocess data
 (x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
@@ -677,7 +677,7 @@ y_train = np.eye(10)[y_train]
 # Train using cross entropy loss
 nn_cross_entropy = FeedForwardNN(input_dim=28*28, output_dim=10,
                                  num_hidden_layers=2, hidden_layer_dim=128,
-                                 lr=0.001)
+                                 lr=0.005)
 
 # Select optimizer (options: "sgd", "momentum", "nesterov", "rmsprop", "adam", "nadam")
 optimizer_type = "adam"
@@ -688,7 +688,7 @@ cross_entropy_loss = nn_cross_entropy.train(x_train, y_train, epochs=10, optimiz
 # Train using squared error loss
 nn_squared_error = FeedForwardNN(input_dim=28*28, output_dim=10,
                                  num_hidden_layers=2, hidden_layer_dim=128,
-                                 lr=0.001)
+                                 lr=0.005)
 
 optimizer = Optimizer(parameters=nn_squared_error.W, optimizer_type=optimizer_type, lr=0.005)
 
@@ -710,7 +710,7 @@ from keras.datasets import mnist # type: ignore
 # Load MNIST dataset
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
-wandb.init(project="classification",name="mnist performance")
+wandb.init(project="fashion-mnist-classification-v2",name="mnist performance")
 # Preprocessing
 x_train = x_train.reshape(-1, 28 * 28).astype('float32') / 255.0
 x_test = x_test.reshape(-1, 28 * 28).astype('float32') / 255.0
@@ -722,39 +722,39 @@ y_test = np.eye(num_classes)[y_test]
 configs = [
     {
         "name": "config_1",
-        "learning_rate": 0.001,
+        "learning_rate": 0.0001,
         "num_hidden_layers": 3,
-        "hidden_layer_size": 128,
+        "hidden_layer_size": 64,
         "optimizer": "adam",
-        "activation": "relu",
-        "batch_size": 128,
+        "activation": "tanh",
+        "batch_size": 16,
         "epochs": 10,
         "weight_init": "xavier",        # Options: 'random', 'xavier'
-        "weight_decay": 1e-4        # L2 regularization
+        "weight_decay": 0        # L2 regularization
     },
     {
         "name": "config_2",
         "learning_rate": 0.0005,
         "num_hidden_layers": 4,
-        "hidden_layer_size": 256,
+        "hidden_layer_size": 128,
         "optimizer": "rmsprop",
-        "activation": "relu",
-        "batch_size": 128,
+        "activation": "sigmoid",
+        "batch_size": 32,
         "epochs": 10,
         "weight_init": "xavier",
         "weight_decay": 1e-5
     },
     {
         "name": "config_3",
-        "learning_rate": 0.01,
+        "learning_rate": 0.001,
         "num_hidden_layers": 3,
-        "hidden_layer_size": 64,
+        "hidden_layer_size": 128,
         "optimizer": "nadam",
         "activation": "relu",
-        "batch_size": 128,
+        "batch_size": 64,
         "epochs": 10,
         "weight_init": "random",
-        "weight_decay": 1e-3
+        "weight_decay": 0.0005
     }
 ]
 
