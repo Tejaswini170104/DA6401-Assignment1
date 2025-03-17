@@ -1,0 +1,47 @@
+
+=== Training with config_1 ===
+
+Epoch 1/1|cross_entropy Loss: 0.3962
+Epoch 1/1|cross_entropy Loss: 0.1557
+Epoch 1/1|cross_entropy Loss: 0.1130
+Epoch 1/1|cross_entropy Loss: 0.0885
+Epoch 1/1|cross_entropy Loss: 0.0710
+Epoch 1/1|cross_entropy Loss: 0.0579
+Epoch 1/1|cross_entropy Loss: 0.0489
+Epoch 1/1|cross_entropy Loss: 0.0415
+Epoch 1/1|cross_entropy Loss: 0.0333
+Epoch 1/1|cross_entropy Loss: 0.0291
+Test Accuracy for config_1: 97.35%
+
+=== Training with config_2 ===
+
+Epoch 1/1|cross_entropy Loss: 1.7756
+Epoch 1/1|cross_entropy Loss: 1.2345
+Epoch 1/1|cross_entropy Loss: 1.0284
+Epoch 1/1|cross_entropy Loss: 0.8959
+Epoch 1/1|cross_entropy Loss: 0.7961
+Epoch 1/1|cross_entropy Loss: 0.7136
+Epoch 1/1|cross_entropy Loss: 0.6243
+Epoch 1/1|cross_entropy Loss: 0.5323
+Epoch 1/1|cross_entropy Loss: 0.4538
+Epoch 1/1|cross_entropy Loss: 0.3895
+Test Accuracy for config_2: 90.33%
+
+=== Training with config_3 ===
+
+Epoch 1/1|cross_entropy Loss: 0.2126
+Epoch 1/1|cross_entropy Loss: 0.1016
+Epoch 1/1|cross_entropy Loss: 0.0756
+Epoch 1/1|cross_entropy Loss: 0.0593
+Epoch 1/1|cross_entropy Loss: 0.0500
+Epoch 1/1|cross_entropy Loss: 0.0406
+Epoch 1/1|cross_entropy Loss: 0.0361
+Epoch 1/1|cross_entropy Loss: 0.0324
+Epoch 1/1|cross_entropy Loss: 0.0293
+Epoch 1/1|cross_entropy Loss: 0.0278
+Test Accuracy for config_3: 97.65%
+
+=== Final Results ===
+config_1: 97.35%
+config_2: 90.33%
+config_3: 97.65%

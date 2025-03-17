@@ -3,6 +3,8 @@ import numpy as np
 import pandas as pd
 from keras.datasets import fashion_mnist # type: ignore
 
+# Question 1
+
 # load the fashion-mnist dataset
 (x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
 
@@ -29,9 +31,8 @@ wandb.log({"fashion-mnist samples": [wandb.Image(img, caption=label) for img, la
 # finish wandb run
 wandb.finish()
 
-# ---------------------------
+# Question 2 & 3
 # Activation Functions & Derivatives
-# ---------------------------
 def relu(x):
     return np.maximum(0, x)
 
@@ -95,10 +96,7 @@ def compute_accuracy(y_true, y_pred):
         return correct / total
 
 
-   
-# ---------------------------
 # Neural Network Class
-# ---------------------------
 class FeedForwardNN:
     def __init__(self, input_dim, output_dim, num_hidden_layers, hidden_layer_dim, lr=0.0001,
                  act_hidden="relu", act_output="softmax", weight_init="xavier", weight_decay = 0.0):
@@ -309,10 +307,7 @@ class FeedForwardNN:
 
         return loss_history
 
-
-# ---------------------------
 # Optimizer Implementation
-# ---------------------------
 class Optimizer:
     def __init__(self, parameters, optimizer_type="adam", lr=0.0001, momentum=0.9, beta=0.9, beta1=0.9, beta2=0.999, epsilon=1e-8):
         """
@@ -384,9 +379,8 @@ class Optimizer:
         else:
             raise ValueError("Unsupported optimizer type: " + self.optimizer_type)
        
-# ---------------------------
-# Main: Train on Fashion MNIST (10 classes) with Mini-Batch Training
-# ---------------------------
+
+# Main: Example: Train on Fashion MNIST (10 classes) with Mini-Batch Training
 if __name__ == '__main__':
     # Load Fashion MNIST dataset.
     (x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
@@ -436,7 +430,7 @@ if __name__ == '__main__':
     train_accuracy = compute_accuracy(y_train, train_predictions)
     print("\nTraining Accuracy: {:.2f}%".format(train_accuracy * 100))
 
-
+# Question 4 
 # Define the sweep configuration
 sweep_config = {
     "method": "bayes",  # Random search strategy for efficiency
@@ -550,6 +544,7 @@ def train(config=None):
 wandb.agent(sweep_id, function=train, count=30)
 wandb.finish()
 
+# Question 5
 # BEST Neural network configuration.
 input_dim = 28 * 28  # 784 features.
 output_dim = 10 # 10 classes.
@@ -574,25 +569,20 @@ optimizer = Optimizer(parameters=nn.W, optimizer_type=optimizer_type, lr=learnin
 
 # Train the network with mini-batch training.
 print("Training started with mini-batch training...\n")
+
 # Load and Preprocess Data
 (x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
-
-
 # Normalize pixel values (0 to 1)
 x_train, x_test = x_train / 255.0, x_test / 255.0
-
-
 # Flatten images for neural network input
 x_train = x_train.reshape(x_train.shape[0], -1)
 x_test = x_test.reshape(x_test.shape[0], -1)
-
 
 # One-hot encode labels
 num_classes = 10
 y_train_onehot = np.eye(num_classes)[y_train]
 y_test_onehot = np.eye(num_classes)[y_test]
 loss_history = nn.train(x_train, y_train_onehot, epochs=epochs, batch_size=batch_size, print_every=1, optimizer=optimizer)
-
 
 # Evaluate on training data.
 Y_pred_test = nn.forward(x_test)
@@ -602,12 +592,11 @@ print(f"Test Accuracy: {test_accuracy:.2%}")
 
 # Compute Confusion Matrix using NumPy
 # Initialize the W&B run
-# Ensure y_test and test_predictions are in the correct format
-# Convert y_test_onehot back to class indices for confusion matrix
 y_test_labels = np.argmax(y_test_onehot, axis=1)
 if wandb.run is not None:
     wandb.finish()
 
+# Question 7
 import seaborn as sns
 import matplotlib.pyplot as plt
 # Initialize a new W&B run
@@ -655,6 +644,7 @@ wandb.log_artifact(artifact)
 # Finish the W&B run
 wandb.finish()
 
+# Question 8
 wandb.init(project="fashion-mnist-classification-v6", name="loss-comparison")
 
 # Load and preprocess data
@@ -692,7 +682,7 @@ for epoch in range(10):
 
 wandb.finish()
 
-
+# Question 10
 from keras.datasets import mnist # type: ignore
 
 # Load MNIST dataset
@@ -717,8 +707,8 @@ configs = [
         "activation": "relu",
         "batch_size": 16,
         "epochs": 10,
-        "weight_init": "xavier",        # Options: 'random', 'xavier'
-        "weight_decay": 0        # L2 regularization
+        "weight_init": "xavier",        
+        "weight_decay": 0       
     },
     {
         "name": "config_2",

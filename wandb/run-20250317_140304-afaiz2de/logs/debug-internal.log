@@ -1,0 +1,16 @@
+{"time":"2025-03-17T14:03:04.619634109Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250317_140304-afaiz2de/logs/debug-core.log"}
+{"time":"2025-03-17T14:03:04.722510286Z","level":"INFO","msg":"created new stream","id":"afaiz2de"}
+{"time":"2025-03-17T14:03:04.722562143Z","level":"INFO","msg":"stream: started","id":"afaiz2de"}
+{"time":"2025-03-17T14:03:04.722640351Z","level":"INFO","msg":"writer: Do: started","stream_id":"afaiz2de"}
+{"time":"2025-03-17T14:03:04.722751338Z","level":"INFO","msg":"handler: started","stream_id":"afaiz2de"}
+{"time":"2025-03-17T14:03:04.722778368Z","level":"INFO","msg":"sender: started","stream_id":"afaiz2de"}
+{"time":"2025-03-17T14:03:05.258701663Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T14:03:17.207490683Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T14:03:17.208140054Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T14:03:18.209143553Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.279426274,"progress":"863B/863B"}],"total_operations":1}}
+{"time":"2025-03-17T14:03:18.312870771Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T14:03:18.661211901Z","level":"INFO","msg":"stream: closing","id":"afaiz2de"}
+{"time":"2025-03-17T14:03:18.661230235Z","level":"INFO","msg":"handler: closed","stream_id":"afaiz2de"}
+{"time":"2025-03-17T14:03:18.661240354Z","level":"INFO","msg":"writer: Close: closed","stream_id":"afaiz2de"}
+{"time":"2025-03-17T14:03:18.661306708Z","level":"INFO","msg":"sender: closed","stream_id":"afaiz2de"}
+{"time":"2025-03-17T14:03:18.661319512Z","level":"INFO","msg":"stream: closed","id":"afaiz2de"}
