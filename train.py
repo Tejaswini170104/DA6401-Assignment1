@@ -23,7 +23,7 @@ for class_idx in range(10):
     sample_labels.append(class_names[class_idx])
 
 # initialize wandb
-wandb.init(project="fashion-mnist-classification-v6",
+wandb.init(project="fashion-mnist-classification-v7",
            entity="tejaswiniksssn-indian-institute-of-technology-madras",
            name="fashion-mnist-samples")
 # log images into wandb
@@ -222,7 +222,7 @@ class FeedForwardNN:
                     dZ = (Y_pred - Y_true) / n_samples
                 elif loss_type == "squared_error":
                     # squared error uses raw difference, no need for softmax derivative
-                    dZ = (Y_pred - Y_true) 
+                    dZ = (Y_pred - Y_true) / n_samples
             else:
                 dZ = dA * activation_derivative(z, self.act_hidden)
 
@@ -240,13 +240,6 @@ class FeedForwardNN:
 
 
         return grads
-    
-    def update_params(self, grads):
-        """
-        Updates weights using simple SGD.
-        """
-        for i in range(self.num_layers):
-            self.W[i] -= self.lr * grads[i]
 
 
     def train(self, X, Y, epochs=20, batch_size=None, print_every=1, optimizer=None, loss_type="cross_entropy"):
@@ -298,7 +291,9 @@ class FeedForwardNN:
                 if optimizer is not None:
                     optimizer.step(grads)
                 else:
-                    self.update_params(grads)
+                    if not hasattr(self, 'optimizer'):
+                        self.optimizer = Optimizer(parameters=self.W, optimizer_type="adam", lr=self.lr)
+                    self.optimizer.step(grads)
 
             loss_history.append(epoch_loss)
             if (epoch + 1) % print_every == 0:
@@ -450,7 +445,7 @@ sweep_config = {
 
 
 # Initialize the sweep
-sweep_id = wandb.sweep(sweep_config, project="fashion-mnist-classification-v6")
+sweep_id = wandb.sweep(sweep_config, project="fashion-mnist-classification-v7")
 
 
 # Load and preprocess data
@@ -475,7 +470,7 @@ y_test = np.eye(num_classes)[y_test]
 
 def train(config=None):
     run = wandb.init(
-        project="fashion-mnist-classification-v6",
+        project="fashion-mnist-classification-v7",
         entity="tejaswiniksssn-indian-institute-of-technology-madras",
         config=config
     )
@@ -551,7 +546,7 @@ output_dim = 10 # 10 classes.
 num_hidden_layers = 5
 hidden_layer_dim = 128
 learning_rate = 0.0001
-epochs = 20  # You may increase epochs for better performance.
+epochs = 15  # You may increase epochs for better performance.
 batch_size = 16  # Mini-batch size.
 weight_init = "xavier"
 weight_decay = 0
@@ -600,7 +595,7 @@ if wandb.run is not None:
 import seaborn as sns
 import matplotlib.pyplot as plt
 # Initialize a new W&B run
-wandb.init(project="fashion-mnist-classification-v6", name="confusion_matrix_heatmap_artifact")
+wandb.init(project="fashion-mnist-classification-v7", name="confusion_matrix_heatmap_artifact")
 
 num_classes = 10
 conf_matrix = np.zeros((num_classes, num_classes), dtype=int)
@@ -645,17 +640,20 @@ wandb.log_artifact(artifact)
 wandb.finish()
 
 # Question 8
-wandb.init(project="fashion-mnist-classification-v6", name="loss-comparison")
+wandb.init(project="fashion-mnist-classification-v7", name="loss-comparison")
 
 # Load and preprocess data
 (x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
 x_train = x_train.reshape(-1, 28*28).astype('float32') / 255.0
+x_test = x_test.reshape(-1, 28*28).astype('float32') / 255.0
 y_train = np.eye(10)[y_train]
+y_test_labels = y_test.copy()
+y_test = np.eye(10)[y_test]
 
 # Train using cross entropy loss
 nn_cross_entropy = FeedForwardNN(input_dim=28*28, output_dim=10,
-                                 num_hidden_layers=2, hidden_layer_dim=128,
-                                 lr=0.005)
+                                 num_hidden_layers=5, hidden_layer_dim=128,
+                                 lr=0.005, act_hidden="relu", act_output="softmax", weight_init = "xavier", weight_decay = 0.0)
 
 # Select optimizer (options: "sgd", "momentum", "nesterov", "rmsprop", "adam", "nadam")
 optimizer_type = "adam"
@@ -665,12 +663,22 @@ cross_entropy_loss = nn_cross_entropy.train(x_train, y_train, epochs=10, optimiz
 
 # Train using squared error loss
 nn_squared_error = FeedForwardNN(input_dim=28*28, output_dim=10,
-                                 num_hidden_layers=2, hidden_layer_dim=128,
-                                 lr=0.005)
+                                 num_hidden_layers=5, hidden_layer_dim=128,
+                                 lr=0.005, act_hidden="relu", act_output="softmax", weight_init = "xavier", weight_decay = 0.0)
 
 optimizer = Optimizer(parameters=nn_squared_error.W, optimizer_type=optimizer_type, lr=0.005)
 
 squared_error_loss = nn_squared_error.train(x_train, y_train, epochs=10, loss_type="squared_error")
+
+# Compute test accuracy for cross entropy model
+y_pred_test_ce = nn_cross_entropy.forward(x_test)
+test_predictions_ce = np.argmax(y_pred_test_ce, axis=1)
+test_accuracy_ce = np.mean(test_predictions_ce == y_test_labels)
+
+# Compute test accuracy for squared error model
+y_pred_test_se = nn_squared_error.forward(x_test)
+test_predictions_se = np.argmax(y_pred_test_se, axis=1)
+test_accuracy_se = np.mean(test_predictions_se == y_test_labels)
 
 # Directly log loss curves to W&B as a line plot
 for epoch in range(10):
@@ -680,6 +688,16 @@ for epoch in range(10):
         "epoch": epoch + 1
     })
 
+# Log test accuracy to W&B
+wandb.log({
+    "Cross Entropy Test Accuracy": test_accuracy_ce,
+    "Squared Error Test Accuracy": test_accuracy_se
+})
+
+# Print test accuracy
+print(f"Cross Entropy Test Accuracy: {test_accuracy_ce:.2%}")
+print(f"Squared Error Test Accuracy: {test_accuracy_se:.2%}")
+
 wandb.finish()
 
 # Question 10
@@ -688,7 +706,7 @@ from keras.datasets import mnist # type: ignore
 # Load MNIST dataset
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
-wandb.init(project="fashion-mnist-classification-v6",name="mnist performance")
+wandb.init(project="fashion-mnist-classification-v7",name="mnist performance")
 # Preprocessing
 x_train = x_train.reshape(-1, 28 * 28).astype('float32') / 255.0
 x_test = x_test.reshape(-1, 28 * 28).astype('float32') / 255.0
@@ -719,7 +737,7 @@ configs = [
         "activation": "sigmoid",
         "batch_size": 32,
         "epochs": 10,
-        "weight_init": "random",
+        "weight_init": "xavier",
         "weight_decay": 1e-5
     },
     {

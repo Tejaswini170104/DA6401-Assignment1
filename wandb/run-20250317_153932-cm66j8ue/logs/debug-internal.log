@@ -1,0 +1,16 @@
+{"time":"2025-03-17T15:39:32.632872573Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/workspaces/DA6401-Assignment1/wandb/run-20250317_153932-cm66j8ue/logs/debug-core.log"}
+{"time":"2025-03-17T15:39:32.739817631Z","level":"INFO","msg":"created new stream","id":"cm66j8ue"}
+{"time":"2025-03-17T15:39:32.739853548Z","level":"INFO","msg":"stream: started","id":"cm66j8ue"}
+{"time":"2025-03-17T15:39:32.739998792Z","level":"INFO","msg":"writer: Do: started","stream_id":"cm66j8ue"}
+{"time":"2025-03-17T15:39:32.740116823Z","level":"INFO","msg":"handler: started","stream_id":"cm66j8ue"}
+{"time":"2025-03-17T15:39:32.740438253Z","level":"INFO","msg":"sender: started","stream_id":"cm66j8ue"}
+{"time":"2025-03-17T15:39:33.212666817Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T15:39:34.237032429Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T15:39:34.23793511Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T15:39:35.204067777Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/fashion-mnist samples_0_c994f021ba36204ca3c1.png","runtime_seconds":0.494587441,"progress":"590B/590B"},{"desc":"uploading media/images/fashion-mnist samples_0_4d144877c9093c197264.png","runtime_seconds":0.494584846,"progress":"374B/374B"},{"desc":"uploading media/images/fashion-mnist samples_0_cd8689e0f2a035303171.png","runtime_seconds":0.494535394,"progress":"609B/609B"},{"desc":"uploading media/images/fashion-mnist samples_0_352ec8bcbb7f793c3857.png","runtime_seconds":0.494531978,"progress":"503B/503B"},{"desc":"uploading media/images/fashion-mnist samples_0_c5a7eaa6a52ac0e794bb.png","runtime_seconds":0.494528541,"progress":"631B/631B"},{"desc":"uploading media/images/fashion-mnist samples_0_adf48a208b1e9f1a3b47.png","runtime_seconds":0.494525666,"progress":"574B/574B"},{"desc":"uploading media/images/fashion-mnist samples_0_7f9147937f711e4ba16e.png","runtime_seconds":0.494521438,"progress":"560B/560B"},{"desc":"uploading config.yaml","runtime_seconds":0.186364418,"progress":"582B/582B"}],"total_operations":8}}
+{"time":"2025-03-17T15:39:36.214285234Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T15:39:36.544197491Z","level":"INFO","msg":"stream: closing","id":"cm66j8ue"}
+{"time":"2025-03-17T15:39:36.544334487Z","level":"INFO","msg":"handler: closed","stream_id":"cm66j8ue"}
+{"time":"2025-03-17T15:39:36.544368651Z","level":"INFO","msg":"writer: Close: closed","stream_id":"cm66j8ue"}
+{"time":"2025-03-17T15:39:36.544413725Z","level":"INFO","msg":"sender: closed","stream_id":"cm66j8ue"}
+{"time":"2025-03-17T15:39:36.544758378Z","level":"INFO","msg":"stream: closed","id":"cm66j8ue"}

@@ -1,0 +1,22 @@
+
+=== Training with config_1 ===
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 786, in <module>
+    loss = nn.train(
+           ^^^^^^^^^
+  File "/workspaces/DA6401-Assignment1/train.py", line 292, in train
+    optimizer.step(grads)
+  File "/workspaces/DA6401-Assignment1/train.py", line 364, in step
+    self.parameters[i] -= self.lr * m_hat / (np.sqrt(v_hat) + self.epsilon)
+    ~~~~~~~~~~~~~~~^^^
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/workspaces/DA6401-Assignment1/train.py", line 786, in <module>
+    loss = nn.train(
+           ^^^^^^^^^
+  File "/workspaces/DA6401-Assignment1/train.py", line 292, in train
+    optimizer.step(grads)
+  File "/workspaces/DA6401-Assignment1/train.py", line 364, in step
+    self.parameters[i] -= self.lr * m_hat / (np.sqrt(v_hat) + self.epsilon)
+    ~~~~~~~~~~~~~~~^^^
+KeyboardInterrupt

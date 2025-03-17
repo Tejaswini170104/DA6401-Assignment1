@@ -74,7 +74,7 @@ Optimizer: Adam, Activation: ReLU, Batch Size: 16 <br>
 Epochs: 20, Weight Decay: 0 <br>
 Performance: <br>
 Achieved highest validation accuracy with the above configuration.
-Achieved test accuracy = 88.84%  <br>
+Achieved test accuracy = 88.62%  <br>
 
 # Question 6: <br>
 Inferences and observations in wandb report. <br>
@@ -95,9 +95,9 @@ Logged loss curves directly to W&B as a line plot to visualize performance diffe
 MNIST Hyperparameter Recommendations: <br>
 Based on experimentation with Fashion-MNIST, the following 3 hyperparameter configurations were tested on the MNIST dataset:<br>
 
-Config 1 : 5 hidden layers (128), learning rate = 0.0001, optimizer = Adam, activation = ReLU, batch size = 16, weight decay = 0 → Achieved test accuracy 97.35 %.<br>
-Config 2 : 4 hidden layers (128), learning rate = 0.0005, optimizer = RMSprop, activation = Sigmoid, batch size = 32, weight decay = 1e-5 → Achieved test accuracy 90.33 %.<br>
-Config 3 : 3 hidden layers (128), learning rate = 0.001, optimizer = Nadam, activation = ReLU, batch size = 64, weight decay = 0.0005 → Achieved test accuracy 97.65 %.<br>
+Config 1 : 5 hidden layers (128), learning rate = 0.0001, optimizer = Adam, activation = ReLU, batch size = 16, weight decay = 0 → Achieved test accuracy 97.65 %.<br>
+Config 2 : 4 hidden layers (128), learning rate = 0.0005, optimizer = RMSprop, activation = Sigmoid, batch size = 32, weight decay = 1e-5 → Achieved test accuracy 96.95 %.<br>
+Config 3 : 3 hidden layers (128), learning rate = 0.001, optimizer = Nadam, activation = ReLU, batch size = 64, weight decay = 0.0005 → Achieved test accuracy 97.92 %.<br>
 
 
 

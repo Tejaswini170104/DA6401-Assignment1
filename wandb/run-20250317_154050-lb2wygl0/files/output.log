@@ -1,0 +1,22 @@
+Epoch 1/10|cross_entropy Loss: 2.4169
+Epoch 2/10|cross_entropy Loss: 2.2707
+Epoch 3/10|cross_entropy Loss: 1.7343
+Epoch 4/10|cross_entropy Loss: 1.4754
+Epoch 5/10|cross_entropy Loss: 1.2477
+Epoch 6/10|cross_entropy Loss: 1.0378
+Epoch 7/10|cross_entropy Loss: 0.9944
+Epoch 8/10|cross_entropy Loss: 0.8993
+Epoch 9/10|cross_entropy Loss: 0.8527
+Epoch 10/10|cross_entropy Loss: 0.8353
+Epoch 1/10|squared_error Loss: 2.3801
+Epoch 2/10|squared_error Loss: 1.8895
+Epoch 3/10|squared_error Loss: 1.6039
+Epoch 4/10|squared_error Loss: 1.3825
+Epoch 5/10|squared_error Loss: 1.1514
+Epoch 6/10|squared_error Loss: 1.0145
+Epoch 7/10|squared_error Loss: 0.9356
+Epoch 8/10|squared_error Loss: 0.9132
+Epoch 9/10|squared_error Loss: 0.8212
+Epoch 10/10|squared_error Loss: 0.7730
+Cross Entropy Test Accuracy: 71.42%
+Squared Error Test Accuracy: 70.64%
