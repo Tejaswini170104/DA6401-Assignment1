@@ -1,5 +1,5 @@
 # DA6401-Assignment1
-wandb report link : https://wandb.ai/tejaswiniksssn-indian-institute-of-technology-madras/fashion-mnist-classification-v7/reports/DA6401-asg01-report--VmlldzoxMTgzOTg5NQ <br>
+wandb report link : https://wandb.ai/tejaswiniksssn-indian-institute-of-technology-madras/fashion-mnist-classification-v7/reports/DA6401-asg01-report--VmlldzoxMTgzOTg5NQ?accessToken=n379kwn5chkprb84mrro7t6b33pjn1002e2cauurjd0bvakhjpjjks2yz4hdv9qi <br>
 github repo link : https://github.com/Tejaswini170104/DA6401-Assignment1 <br>
 requirements.txt file contains the necessary libraries to be downloaded. <br>
 # Question 1: <br>
